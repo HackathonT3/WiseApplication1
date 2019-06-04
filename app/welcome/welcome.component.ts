@@ -117,14 +117,14 @@ export class WelcomeComponent implements OnInit {
         var defn1: AnimationDefinition = {
             target: currSlide,
             translate: { x: (direction == 2 ? -this.screenWidth : this.screenWidth), y: 0 },
-            duration: 500
+            duration: 10
         };
         definitions.push(defn1);
 
         var defn2: AnimationDefinition = {
             target: nextSlide,
             translate: { x: 0, y: 0 },
-            duration: 500
+            duration: 10
         };
         definitions.push(defn2);
 
