@@ -17,6 +17,8 @@ export class LoginComponent {
 
     user: any;
     processing = false;
+    forgotPasswordPrompt = new ForgotPasswordPrompt
+    
     @ViewChild("password") password: ElementRef;
 
     constructor(page: Page, private nav: RouterExtensions, private loginService: LoginService,
@@ -52,7 +54,7 @@ export class LoginComponent {
     }
 
     forgotPassword() {
-        this.nav.navigate(["/home"]);
+        this.forgotPasswordPrompt.forgotPassword();
     }
 
     focusPassword() {
