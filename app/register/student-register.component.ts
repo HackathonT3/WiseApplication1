@@ -9,7 +9,7 @@ import { ModalDialogService } from "nativescript-angular/directives/dialogs";
 import { DOBModalComponent } from "./modal/dob/dob.modal";
 
 @Component({
-  selector: 'welcome-student-register',
+  selector: 'student-register',
   templateUrl: './student-register.component.html',
   styleUrls: ['./student-register.component.css'],
   moduleId: module.id,
