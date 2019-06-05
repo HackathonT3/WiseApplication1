@@ -1,0 +1,15 @@
+{
+    "version": 1,
+    "cli": {
+        "defaultCollection": "@nativescript/schematics"
+    },
+    "projects": {
+        "WISEAPPLICATION1": {
+            "root": "",
+            "sourceRoot": "src",
+            "projectType": "application",
+            "prefix": "welcome"
+        }
+    },
+    "defaultProject": "WISEAPPLICATION1"
+}

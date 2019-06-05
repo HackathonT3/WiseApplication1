@@ -1,0 +1,75 @@
+.page {
+    align-items: center;
+    flex-direction: column;
+  }
+  .form {
+    margin-left: 30;
+    margin-right: 30;
+    flex-grow: 2;
+    vertical-align: middle;
+  }
+  
+  .logo {
+    margin-bottom: 12;
+    height: 90;
+    font-weight: bold;
+  }
+  .header {
+    font-size: 25;
+    font-weight: 600;
+    margin-bottom: 30;
+    text-align: center;
+    color: #D51A1A;
+  }
+  
+  .input-field {
+    margin-bottom: 25;
+  }
+  .input {
+    font-size: 18;
+  }
+  .input:disabled {
+    background-color: white;
+    opacity: 0.5;
+  }
+  
+  .btn-primary {
+    margin: 30 5 15 5;
+  }
+  
+  .sign-up-label {
+    margin-bottom: 20;
+  }
+  .bold {
+    color: #000000; 
+  }
+
+  .scf-input {
+    border-bottom-color: #eeeeee;
+    text-align: right;
+    color: gray;
+    width: 170;
+}
+.title-label {
+  text-align: left;
+  color: #024184;
+  width: 150;
+}
+
+.overlay {
+  background-color: #024184;
+  opacity: 0.5;
+}
+
+.select-date {
+  background-color: #ffffff;
+  margin: 0 24;
+  border-radius: 10;
+}
+
+.title-select-date {
+  padding: 16 0 4 0;
+  text-align: center;
+  color: #024184;
+  font-weight: 500;
+}
