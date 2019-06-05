@@ -9,28 +9,28 @@
                 },
                 {
                     "isOwn": false,
-                    "imageSrc": "~/assets/face1.jpg",
-                    "title": "william"
-                },
-                {
-                    "isOwn": false,
-                    "imageSrc": "~/assets/face3.jpg",
-                    "title": "pavlo"
-                },
-                {
-                    "isOwn": false,
-                    "imageSrc": "~/assets/face4.jpg",
-                    "title": "kumaran"
-                },
-                {
-                    "isOwn": false,
-                    "imageSrc": "~/assets/face3.jpg",
-                    "title": "john"
-                },
-                {
-                    "isOwn": false,
                     "imageSrc": "~/assets/face2.jpg",
-                    "title": "dena007"
+                    "title": "Course"
+                },
+                {
+                    "isOwn": false,
+                    "imageSrc": "~/assets/assignments.jpg",
+                    "title": "Assignments"
+                },
+                {
+                    "isOwn": false,
+                    "imageSrc": "~/assets/exam.jpg",
+                    "title": "Take Exam"
+                },
+                {
+                    "isOwn": false,
+                    "imageSrc": "~/assets/certification.jpg",
+                    "title": "Certification"
+                },
+                {
+                    "isOwn": false,
+                    "imageSrc": "~/assets/face3.jpg",
+                    "title": "Find Teacher"
                 }
             ],
             "body": [
