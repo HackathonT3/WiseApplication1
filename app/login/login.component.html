@@ -34,7 +34,7 @@
     <Label class="login-label sign-up-label" (tap)="register()">
         <FormattedString>
             <Span [text]="'Don’t have an account? '"></Span>
-            <Span [text]=" 'Sign up'" class="bold"></Span>
+            <Span [text]=" 'Sign up'" class="bold" (tap)="register()"></Span>
         </FormattedString>
     </Label>
 </FlexboxLayout>

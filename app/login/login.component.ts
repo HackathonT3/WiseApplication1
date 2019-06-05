@@ -30,7 +30,7 @@ export class LoginComponent {
     }
 6
     register() {
-        this.nav.navigate(["/home"]);
+        this.nav.navigate(["/student-register"]);
     }
 
     submit() {
