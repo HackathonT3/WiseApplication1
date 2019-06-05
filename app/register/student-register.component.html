@@ -1,0 +1,105 @@
+<FlexboxLayout class="page">
+    <StackLayout class="form">
+        <Label class="header" text="W!se Register"></Label>
+
+        <PreviousNextView>
+            <ScrollView height="470" orientation="vertical">
+                <GridLayout rows="auto auto auto auto auto auto auto auto auto auto auto auto auto">
+                <StackLayout rpw="0" class="input-field" height="35" >
+                    <TextField class="input" hint="Email*" [isEnabled]="!processing"
+                        keyboardType="email" autocorrect="false"
+                        autocapitalizationType="none" [(ngModel)]="user.email"></TextField>
+                    <StackLayout class="hr-light"></StackLayout>
+                </StackLayout>
+
+                <StackLayout row="1" class="input-field" height="35">
+                    <TextField class="input" [isEnabled]="!processing"
+                        hint="Password*" secure="true" [(ngModel)]="user.password"></TextField>
+                    <StackLayout class="hr-light"></StackLayout>
+                </StackLayout>
+
+                <StackLayout row="2" class="input-field" height="35">
+                    <TextField class="input" [isEnabled]="!processing"
+                        hint="Confirm password*" secure="true" [(ngModel)]="user.confirmPassword"></TextField>
+                    <StackLayout class="hr-light"></StackLayout>
+                </StackLayout>
+
+                <StackLayout row="3" class="input-field" height="35">
+                    <TextField class="input" [isEnabled]="!processing"
+                        hint="Username*" [(ngModel)]="user.userName"></TextField>
+                    <StackLayout class="hr-light"></StackLayout>
+                </StackLayout>
+
+                <StackLayout row="4" class="input-field" height="35">
+                    <TextField class="input" [isEnabled]="!processing"
+                        hint="First Name*" [(ngModel)]="user.firstName"></TextField>
+                    <StackLayout class="hr-light"></StackLayout>
+                </StackLayout>
+
+                <StackLayout row="5" class="input-field" height="35">
+                        <TextField class="input" [isEnabled]="!processing"
+                            hint="Middle Name" [(ngModel)]="user.middleName"></TextField>
+                        <StackLayout class="hr-light"></StackLayout>
+                </StackLayout>
+
+                <StackLayout row="6" class="input-field" height="35">
+                    <TextField class="input" [isEnabled]="!processing"
+                        hint="Last Name*" [(ngModel)]="user.lastName"></TextField>
+                    <StackLayout class="hr-light"></StackLayout>
+                </StackLayout>
+
+                <StackLayout row="7" class="input-field" height="35" orientation="horizontal">
+                    <Label text='Date of Birth*'  class="title-label"></Label>
+                    <Label text='{{ dob | date:"y/M/d" }}'
+                        class="scf-input" (tap)="onOpenSelectDate()"></Label>
+                    <Image src="~/image/arrow_down.png"
+                        (tap)="onOpenSelectDate()"></Image>
+                </StackLayout>
+                
+                <StackLayout row="8" class="input-field" height="35" orientation="horizontal">
+                    <Label text='Gender*'  class="title-label"></Label>
+                    <Label text='{{ gender }}'
+                        class="scf-input" (tap)="onOpenSelectGender()"></Label>
+                    <Image src="~/image/arrow_down.png"
+                        (tap)="onOpenSelectGender()"></Image>
+                </StackLayout>
+
+                <StackLayout row="9" class="input-field" height="35" orientation="horizontal">
+                        <Label text='Member Type*'  class="title-label"></Label>
+                        <Label text='{{ memberType }}'
+                            class="scf-input" (tap)="onOpenSelectMemberType()"></Label>
+                        <Image src="~/image/arrow_down.png"
+                            (tap)="onOpenSelectMemberType()"></Image>
+                </StackLayout>
+
+                <StackLayout row="10" class="input-field" height="35" orientation="horizontal">
+                        <Label text='Grade Level*'  class="title-label"></Label>
+                        <Label text='{{ gradeLevel }}'
+                            class="scf-input" (tap)="onOpenSelectGradeLevel()"></Label>
+                        <Image src="~/image/arrow_down.png"
+                            (tap)="onOpenSelectGradeLevel()"></Image>
+                </StackLayout>
+
+                <StackLayout row="11" class="input-field" height="35" orientation="horizontal">
+                        <Label text='Course*'  class="title-label"></Label>
+                        <Label text='{{ course }}'
+                            class="scf-input" (tap)="onOpenSelectCourse()"></Label>
+                        <Image src="~/image/arrow_down.png"
+                            (tap)="onOpenSelectCourse()"></Image>
+                </StackLayout>
+
+                <ActivityIndicator rowSpan="3" [busy]="processing"></ActivityIndicator>
+                </GridLayout>
+            </ScrollView>
+        </PreviousNextView>
+
+        <Button text="Register" [isEnabled]="!processing"
+            (tap)="register()" class="btn btn-primary m-t-20"></Button>
+    </StackLayout>
+
+    <Label class="sign-up-label" (tap)="toggleForm()">
+        <FormattedString>
+            <Span text="Back to Login"></Span>
+        </FormattedString>
+    </Label>
+</FlexboxLayout>
