@@ -47,7 +47,8 @@ export class LoginComponent {
         this.loginService.login().subscribe(res => {
             this.processing = false;
             appSettings.setString("user", this.user.email);
-            this.alert('logged in as ' + appSettings.getString("user"))
+
+            this.nav.navigate(["/dashboard"]);
         });
     }
 
