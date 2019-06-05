@@ -28,7 +28,7 @@ export class LoginComponent {
         this.user.email = "user@nativescript.org";
         this.user.password = "password";
     }
-6
+
     register() {
         this.nav.navigate(["/student-register"]);
     }

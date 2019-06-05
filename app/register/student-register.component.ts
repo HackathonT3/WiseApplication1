@@ -26,7 +26,7 @@ export class StudentRegisterComponent {
   course = "Economics";
 
   constructor(private userService: UserService, 
-              private routerExtensions: RouterExtensions,
+              private nav: RouterExtensions,
               private vcRef: ViewContainerRef,
               private modal: ModalDialogService) { 
     this.user = new User();
@@ -133,6 +133,11 @@ export class StudentRegisterComponent {
 		action(options).then((result) => {
 			this.course = (result == 'Cancel') ? this.course : result;
 		});
-	}
+  }
+  
+  login() {
+    console.log('login');
+    this.nav.navigate(["/login"]);
+  }
 
 }

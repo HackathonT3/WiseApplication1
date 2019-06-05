@@ -1,8 +1,7 @@
 import { DatePicker } from "tns-core-modules/ui/date-picker";
 
 export class User {
-    classCode: string;
-    dob: DatePicker;
+    dob: Date;
     firstName: string;
     gender: string;
     lastName: string;
