@@ -2,14 +2,10 @@
     "instagram": {
         "home": {
             "header": [
-                {
-                    "isOwn": true,
-                    "imageSrc": "~/assets/wk.png",
-                    "title": "Your Story"
-                },
+
                 {
                     "isOwn": false,
-                    "imageSrc": "~/assets/face2.jpg",
+                    "imageSrc": "~/assets/mycourses.png",
                     "title": "Course"
                 },
                 {

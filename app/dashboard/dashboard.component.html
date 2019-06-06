@@ -144,6 +144,10 @@
             <GridLayout borderBottomWidth="0.5" borderBottomColor="gray" rows="auto, auto, auto, auto"
                         columns="auto, 15, *, 15 *, 15, *" padding="10">
 
+                <Image row="0" rowSpan="3" col="0" src="~/assets/face4.jpg"
+                       height="100" width="100" borderRadius="100%"
+                       verticalAlignment="center" horizontalAlignment="center"
+                       stretch="aspectFill"></Image>
                 <Label row="0" rowSpan="3" col="0" borderRadius="100%" width="30"
                        height="30" text="&#xf055;" fontSize="30" backgroundColor="white"
                        color="#2E93F0" class="fa" textAlignment="center"
@@ -189,9 +193,7 @@
             </GridLayout>
 
             <FlexboxLayout flexWrap="wrap" width="100%">
-                <Image *ngFor="let photo of photos" borderColor="white"
-                       borderWidth="1" [src]="photo" [height]="photoHeight"
-                       [width]="photoWidth" stretch="aspectFill"></Image>
+
             </FlexboxLayout>
 
         </StackLayout>
