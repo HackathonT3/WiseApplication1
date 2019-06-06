@@ -8,6 +8,9 @@ import { FilterComponent } from "./filter/filter.component";
 import { ModalDialogOptions, ModalDialogService } from "nativescript-angular/modal-dialog";
 import { SearchBar } from "tns-core-modules/ui/search-bar";
 import { alert } from "tns-core-modules/ui/dialogs";
+import { RouterExtensions } from "nativescript-angular";
+import * as appSettings from "tns-core-modules/application-settings";
+import { action } from "tns-core-modules/ui/dialogs";
 
 @Component({
   selector: 'ns-dashboard',
@@ -30,10 +33,19 @@ export class DashboardComponent implements OnInit {
 
   isSelected: string = '0';
 
-  constructor(private photosService: PhotosService, private camera: CameraService, private page: Page, private fileReader: FileReaderService, private modal: ModalDialogService, private vref: ViewContainerRef, private cd: ChangeDetectorRef) {
-    this.photos = this.photosService.getPhotos();
-    this.letsInitialize();
-  }
+    constructor(
+        private photosService: PhotosService,
+        private camera: CameraService,
+        private page: Page,
+        private fileReader: FileReaderService,
+        private modal: ModalDialogService,
+        private vref: ViewContainerRef,
+        private cd: ChangeDetectorRef,
+        private nav: RouterExtensions) {
+
+        this.photos = this.photosService.getPhotos();
+        this.letsInitialize();
+    }
 
   ngOnInit(): void {
     this.page.actionBarHidden = true;
@@ -80,6 +92,10 @@ export class DashboardComponent implements OnInit {
 
   selectedRoute: string = 'home';
 
+  get userName() {
+      return appSettings.getString("user");
+  }
+
   onNavtap(route: string, selectedTab: string) {
     this.isSelected = selectedTab;
     this.selectedRoute = route;
@@ -98,4 +114,24 @@ export class DashboardComponent implements OnInit {
     let course = this.courses[args.index];
     this.alert("You have changed to course: " + course);
   }
+    tapHeader(header) {
+        if (header.route) {
+            this.nav.navigate(["/" + header.route])
+        }
+    }
+
+    manageUser() {
+        let options = {
+            title: "My Account",
+            message: "Do you want to log out?",
+            cancelButtonText: "Cancel",
+            actions: ["Logout"]
+        };
+
+        action(options).then((result) => {
+            if (result === "Logout"){
+                this.nav.navigate(["/login"]);
+            }
+});
+    }
 }

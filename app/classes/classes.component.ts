@@ -1,25 +1,87 @@
 import { Component, OnInit } from '@angular/core';
-import { registerElement } from "nativescript-angular/element-registry";
-import { CardView } from "./nativescript-cardview";
-
-registerElement("CardView", () => CardView);
-
+import { ItemEventData } from 'tns-core-modules/ui/list-view/list-view';
+import { Page } from 'tns-core-modules/ui/page/page';
+import { RouterExtensions } from 'nativescript-angular';
+import { knownFolders, Folder, File } from "tns-core-modules/file-system";
+var frame = require("tns-core-modules/ui/frame");
+var platform = require("tns-core-modules/platform");
 @Component({
-  selector: 'ns-classes',
-  templateUrl: './classes.component.html',
-  styleUrls: ['./classes.component.css'],
-  moduleId: module.id,
+    selector: 'ns-classes',
+    templateUrl: './classes.component.html',
+    styleUrls: ['./classes.component.css'],
+    moduleId: module.id,
 })
 export class ClassesComponent implements OnInit {
 
-  data = [];
-  constructor() { }
+    textFieldValue: string = "";
+    isIOS: boolean;
 
-  ngOnInit(): void {
-    this.data.push({ heading: "Getting Started", content: "Bulbasaur can be seen napping in bright sunlight. There is a seed on its back. By soaking up the sun’s rays, the seed grows progressively larger." });
-    this.data.push({ heading: "Level 1", content: "To support its weight, Ivysaur’s legs and trunk grow thick and strong. If it starts spending more time lying in the sunlight, it’s a sign that the bud will bloom into a large flower soon." });
-    this.data.push({ heading: "Level 2", content: "There is a large flower on Venusaur’s back. The flower is said to take on vivid colors if it gets plenty of nutrition and sunlight. The flower’s aroma soothes the emotions of people." });
-    this.data.push({ heading: "Level 3", content: "The flame that burns at the tip of its tail is an indication of its emotions. The flame wavers when Charmander is enjoying itself. If the Pokémon becomes enraged, the flame burns fiercely." });
-    this.data.push({ heading: "Level 4", content: "Charmeleon mercilessly destroys its foes using its sharp claws. If it encounters a strong foe, it turns aggressive. In this excited state, the flame at the tip of its tail flares with a bluish white color." });}
+    listViewData = [
+        {
+            title: "I Don't Wanna Live Forever (Fifty Shades of Grey)",
+            artist: "Taylor Swift, Zayn Malik",
+            year: "2016",
+            imageUrl: "~/images/calculator-desk-finance-1253591.jpg"
+        },
+        {
+            title: "Blank Space",
+            artist: "Taylor Swift",
+            year: "2014",
+            imageUrl: "~/images/calculator-desk-finance-1253591.jpg"
+        },
+        {
+            title: "End Game",
+            artist: "Taylor Swift, Ed Sheeran, Future",
+            year: "2017",
+            imageUrl: "~/images/calculator-desk-finance-1253591.jpg"
+        },
+        {
+            title: "Love Story",
+            artist: "Taylor Swift",
+            year: "2009",
+            imageUrl: "~/images/calculator-desk-finance-1253591.jpg"
+        },
+        {
+            title: "Everything Has Changed",
+            artist: "Taylor Swift, Ed Sheeran",
+            year: "2012",
+            imageUrl: "~/images/calculator-desk-finance-1253591.jpg"
+        },
+        {
+            title: "Teardrops On My Guitar",
+            artist: "Taylor Swift",
+            year: "2006",
+            imageUrl: "~/images/calculator-desk-finance-1253591.jpg"
+        },
+    ]
 
+
+    searchPhrase: string;
+
+    constructor(private page: Page, private routerExtensions: RouterExtensions) {
+        page.actionBarHidden = false;
+
+        if (platform.isIOS) {
+            this.isIOS = true;
+            page.statusBarStyle = "light";
+        }
+        else {
+            page.backgroundSpanUnderStatusBar = true;
+            this.isIOS = false;
+        }
+    }
+
+    ngOnInit() {
+    }
+
+    onItemTap(args: ItemEventData): void {
+
+    }
+
+    onButtonTap(): void {
+    }
+
+    goBack() {
+        this.routerExtensions.back();
+    }
 }

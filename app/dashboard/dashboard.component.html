@@ -15,9 +15,9 @@
                    verticalAlignment="top" horizontalAlignment="right"
                    textAlignment="center"></Label>
         </GridLayout>
-        <GridLayout *ngIf="selectedRoute == 'profile' ? true : false"
+        <GridLayout *ngIf="selectedRoute == 'profile' ? true : false" (tap)="manageUser()"
                     marginTop="5" marginBottom="5" columns="15, auto, auto, *, auto, auto, 10">
-            <label col="1" text="woorkout.pt" verticalalignment="center"
+            <label col="1" text="{{userName}}" verticalalignment="center"
                    fontsize="20" class="android-lbl"></label>
             <Label col="2" text="&#xf0d7;" class="fa android-lbl" marginleft="8"
                    verticalalignment="center" fontsize="20"></Label>
@@ -43,7 +43,7 @@
                 <ScrollView orientation="horizontal"
                             scrollBarIndicatorVisible="false">
                     <StackLayout orientation="horizontal">
-                        <GridLayout *ngFor="let header of instagram.home.header"
+                        <GridLayout *ngFor="let header of instagram.home.header"  (tap)="tapHeader(header)"
                                     height="90" rows="auto, auto" style="margin: 10;">
                             <Image row="0" [src]="header.imageSrc"
                                    borderRadius="100%" verticalAlignment="center"
@@ -171,7 +171,7 @@
                        borderWidth="0.5" borderColor="gray" borderRadius="5"
                        verticalAlignment="top" textAlignment="center" padding="5"></Label>
 
-                <Label row="3" col="0" colSpan="7" text="Woorkout" fontWeight="bold"
+                <Label row="3" col="0" colSpan="7" text="{{userName}}" fontWeight="bold"
                        textWrap="true" class="android-lbl" marginTop="20"
                        marginBottom="10" marginLeft="5"></Label>
             </GridLayout>
