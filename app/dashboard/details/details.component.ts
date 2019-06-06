@@ -29,7 +29,11 @@ export class DetailsComponent {
 		private routerExtensions: RouterExtensions) {
 			
 		this.offset = this.animationsService.animationOffset;
-		this.landmark = "class description shows here";
+		this.landmark = "class deThe financial techniques of personal finance are easy to understand. This is not rocket science and the foundation of personal finance is easy to understand. Where people have issues is getting and staying motivated. Just like with a lot of things in life, getting distracted is very easy." +
+		"I’m going to teach you about the core four tenants of personal finance. We will go into detail about the core 4 pillars of personal finance." +
+		"At the end of this course, you will know how to get your finances under control, get and stay motivated. Later on, if you want to become an expert on personal finance and retire early for example, you will have a strong foundation to understand how to do so. You’ll also understand the advantages and disadvantages of different personal finance paths." + 
+		"My goal for you is to understand the core four principals of personal finance and to have a strong foundation." + 
+		"Personal finance is a lifelong journey. Personal finance is a marathon, not a sprint.scription shows here";
 	}
 
 	get minHeight() {
