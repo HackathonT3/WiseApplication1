@@ -3,10 +3,9 @@
                 row="0" borderBottomWidth="0.5" borderBottomColor="#b2b2b2">
         <GridLayout *ngIf="selectedRoute == 'home' ? true : false" marginTop="5"
                     marginBottom="5" columns="10, auto, auto, *, auto, auto, 10">
-            <Label col="1" text="&#xf030;" class="fa android-lbl" marginright="8"
-                   verticalalignment="center" fontsize="25"></Label>
-            <Image col="2" height="40" src="~/assets/title.png" stretch="aspectFill"></Image>
-            <Image col="4" width="30" height="30" src="~/assets/icon.png"
+
+            <Image col="2.8" height="70" src="~/assets/wise.png" stretch="aspectFill"></Image>
+            <Image col="4" width="30" height="30" src="~/assets/exam123.png" (tap)="onCertificationTapped()"
                    stretch="aspectFill" marginright="15"></Image>
             <Label col="5" text="&#xf1d9;" class="fa android-lbl"
                    verticalalignment="center" fontsize="25"></Label>
@@ -140,7 +139,8 @@
 
             <GridLayout borderBottomWidth="0.5" borderBottomColor="gray" rows="auto, auto, auto, auto"
                         columns="auto, 15, *, 15 *, 15, *" padding="10">
-                <Image row="0" rowSpan="3" col="0" src="~/assets/wk.png"
+
+                <Image row="0" rowSpan="3" col="0" src="~/assets/face4.jpg"
                        height="100" width="100" borderRadius="100%"
                        verticalAlignment="center" horizontalAlignment="center"
                        stretch="aspectFill"></Image>
@@ -189,9 +189,7 @@
             </GridLayout>
 
             <FlexboxLayout flexWrap="wrap" width="100%">
-                <Image *ngFor="let photo of photos" borderColor="white"
-                       borderWidth="1" [src]="photo" [height]="photoHeight"
-                       [width]="photoWidth" stretch="aspectFill"></Image>
+
             </FlexboxLayout>
 
         </StackLayout>
@@ -205,6 +203,7 @@
             <Label text="CLASSES" fontSize="20" padding="5" color="black"
                    textAlignment="center" style="border-bottom-width: 1; border-bottom-color: black;"></Label>
         </GridLayout>
+<<<<<<< HEAD
         <GridLayout row="1" height="100%">
               <ListView #list [items]="landmarks" (itemTap)="onNavigationItemTap($event)">
                      <ng-template let-item="item">
@@ -218,6 +217,20 @@
                      <Image #animatingImage width="100%"></Image>
               </AbsoluteLayout>
        </GridLayout>
+=======
+        <StackLayout row="1">
+              <ScrollView class="page">
+                       <ListView class="list-group" [items]="classes" (itemTap)="onClassTap($event)">
+                              <ng-template let-item="item">
+                                     <GridLayout class="list-group-item" rows="*" columns="auto, *">
+                                            <Label [text]="item"></Label>
+                                     </GridLayout>
+                              </ng-template>
+                       </ListView>
+                </ScrollView>
+
+          </StackLayout>
+>>>>>>> 83bc592e794572d4bd0ca8dcd3d2034881a56ad5
     </GridLayout>
 
     <GridLayout row="1" *ngIf="selectedRoute == 'loading' ? true : false"

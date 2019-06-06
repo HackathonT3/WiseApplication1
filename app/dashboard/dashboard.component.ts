@@ -34,7 +34,7 @@ export class DashboardComponent implements OnInit {
 
   photos: string[] = [];
 
-  instagram: any[] = [];
+  instagram: any;
 
   courses: any[] = [];
 
@@ -176,6 +176,7 @@ export class DashboardComponent implements OnInit {
 });
     }
 
+<<<<<<< HEAD
     get landmarks() {
       return this._landmarks;
   }
@@ -237,4 +238,9 @@ export class DashboardComponent implements OnInit {
     }).catch(() => { });
 }
 
+=======
+    onCertificationTapped() {
+        this.nav.navigate(["/certification"]);
+    }
+>>>>>>> 83bc592e794572d4bd0ca8dcd3d2034881a56ad5
 }

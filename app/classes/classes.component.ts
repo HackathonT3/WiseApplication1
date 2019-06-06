@@ -18,41 +18,23 @@ export class ClassesComponent implements OnInit {
 
     listViewData = [
         {
-            title: "I Don't Wanna Live Forever (Fifty Shades of Grey)",
-            artist: "Taylor Swift, Zayn Malik",
-            year: "2016",
+            title: "Financial Literacy",
+            artist: "Basic introductory questions",
+            year: "2019",
             imageUrl: "~/images/calculator-desk-finance-1253591.jpg"
         },
         {
-            title: "Blank Space",
-            artist: "Taylor Swift",
+            title: "Financial Literacy II",
+            artist: "Intermediate practice",
             year: "2014",
             imageUrl: "~/images/calculator-desk-finance-1253591.jpg"
         },
         {
-            title: "End Game",
-            artist: "Taylor Swift, Ed Sheeran, Future",
+            title: "Financial Literacy III",
+            artist: "Advanced practice",
             year: "2017",
             imageUrl: "~/images/calculator-desk-finance-1253591.jpg"
-        },
-        {
-            title: "Love Story",
-            artist: "Taylor Swift",
-            year: "2009",
-            imageUrl: "~/images/calculator-desk-finance-1253591.jpg"
-        },
-        {
-            title: "Everything Has Changed",
-            artist: "Taylor Swift, Ed Sheeran",
-            year: "2012",
-            imageUrl: "~/images/calculator-desk-finance-1253591.jpg"
-        },
-        {
-            title: "Teardrops On My Guitar",
-            artist: "Taylor Swift",
-            year: "2006",
-            imageUrl: "~/images/calculator-desk-finance-1253591.jpg"
-        },
+        }
     ]
 
 
@@ -75,7 +57,7 @@ export class ClassesComponent implements OnInit {
     }
 
     onItemTap(args: ItemEventData): void {
-
+        this.routerExtensions.navigate(["/selector"]);
     }
 
     onButtonTap(): void {

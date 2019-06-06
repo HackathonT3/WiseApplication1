@@ -2,13 +2,17 @@
     "instagram": {
         "home": {
             "header": [
+
                 {
-                    "isOwn": true,
-                    "imageSrc": "~/assets/wk.png",
-                    "title": "Your Story"
+                    "isOwn": false,
+<<<<<<< HEAD
+=======
+                    "imageSrc": "~/assets/mycourses.png",
+                    "title": "Course"
                 },
                 {
                     "isOwn": false,
+>>>>>>> 83bc592e794572d4bd0ca8dcd3d2034881a56ad5
                     "imageSrc": "~/assets/assignments.jpg",
                     "title": "Assignments",
                     "route": "classes"
@@ -22,7 +26,8 @@
                 {
                     "isOwn": false,
                     "imageSrc": "~/assets/certification.jpg",
-                    "title": "Certification"
+                    "title": "Certification",
+                    "route": "certification"
                 },
                 {
                     "isOwn": false,
