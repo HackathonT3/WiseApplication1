@@ -1,16 +1,17 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from "@angular/common/http";
 import { Observable, of } from 'rxjs';
-
+import { User } from '../core/user';
 @Injectable({
     providedIn: 'root'
 })
 export class LoginService {
-    private serverUrl = "https://httpbin.org/get";
+    private serverUrl = "https://wiset3.azurewebsites.net/finlite/login";
     constructor(private http: HttpClient) { }
 
-    login(){
-        return this.http.get(this.serverUrl);
+    login(user: User) {
+        const queryParams = '?userName=' + user.username + '&password=' + user.password
+        return this.http.get(this.serverUrl + queryParams);
     }
 
     getSchools(): Observable<string[]> {
@@ -21,7 +22,7 @@ export class LoginService {
         // set headers here e.g.
         let headers = new HttpHeaders({
             "Content-Type": "application/json",
-         });
+        });
 
         return headers;
     }

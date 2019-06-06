@@ -2,7 +2,7 @@
     <StackLayout class="form">
         <Image class="logo" src="~/images/logo.png"></Image>
         <Label class="header" text="W!se login"></Label>
-<!-- <Label [text]="user.email"></Label> -->
+        <!-- <Label [text]="user.email"></Label> -->
         <PreviousNextView>
             <GridLayout rows="auto, auto, auto, auto">
                 <!-- <StackLayout row="0" class="input-field">
@@ -11,15 +11,15 @@
                     <StackLayout class="hr-light"></StackLayout>
                 </StackLayout> -->
                 <StackLayout row="1" class="input-field">
-                    <TextField class="input" hint="Email" [isEnabled]="!processing" keyboardType="email"
-                        autocorrect="false" autocapitalizationType="none" [(ngModel)]="user.email" returnKeyType="next"
-                        (returnPress)="focusPassword()"></TextField>
+                    <TextField hint="Username" class="input" [isEnabled]="!processing" keyboardType="email"
+                        autocorrect="false" autocapitalizationType="none" [(ngModel)]="user.username"
+                        [returnKeyType]="'next'" (returnPress)="focusPassword()"></TextField>
                     <StackLayout class="hr-light"></StackLayout>
                 </StackLayout>
 
                 <StackLayout row="2" class="input-field">
                     <TextField #password class="input" [isEnabled]="!processing" hint="Password" secure="true"
-                        [(ngModel)]="user.password" [returnKeyType]="done"></TextField>
+                        [(ngModel)]="user.password" [returnKeyType]="'done'"></TextField>
                     <StackLayout class="hr-light"></StackLayout>
                 </StackLayout>
 

@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ItemEventData } from 'tns-core-modules/ui/list-view/list-view';
 import { Page } from 'tns-core-modules/ui/page/page';
 import { RouterExtensions } from 'nativescript-angular';
+import { knownFolders, Folder, File } from "tns-core-modules/file-system";
 var frame = require("tns-core-modules/ui/frame");
 var platform = require("tns-core-modules/platform");
 @Component({
@@ -58,7 +59,7 @@ export class ClassesComponent implements OnInit {
     searchPhrase: string;
 
     constructor(private page: Page, private routerExtensions: RouterExtensions) {
-        page.actionBarHidden = true;
+        page.actionBarHidden = false;
 
         if (platform.isIOS) {
             this.isIOS = true;
@@ -74,11 +75,10 @@ export class ClassesComponent implements OnInit {
     }
 
     onItemTap(args: ItemEventData): void {
-        console.log('Item with index: ' + args.index + ' tapped');
+
     }
 
     onButtonTap(): void {
-        console.log("Button was pressed");
     }
 
     goBack() {
