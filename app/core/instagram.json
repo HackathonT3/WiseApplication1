@@ -27,7 +27,8 @@
                 {
                     "isOwn": false,
                     "imageSrc": "~/assets/certification.jpg",
-                    "title": "Certification"
+                    "title": "Certification",
+                    "route": "certification"
                 },
                 {
                     "isOwn": false,

@@ -27,7 +27,7 @@ export class DashboardComponent implements OnInit {
 
   photos: string[] = [];
 
-  instagram: any[] = [];
+  instagram: any;
 
   courses: any[] = [];
 
@@ -143,5 +143,9 @@ export class DashboardComponent implements OnInit {
                 this.nav.navigate(["/login"]);
             }
 });
+    }
+
+    onCertificationTapped() {
+        this.nav.navigate(["/certification"]);
     }
 }

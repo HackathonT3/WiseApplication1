@@ -5,7 +5,7 @@
                     marginBottom="5" columns="10, auto, auto, *, auto, auto, 10">
 
             <Image col="2.8" height="70" src="~/assets/wise.png" stretch="aspectFill"></Image>
-            <Image col="4" width="30" height="30" src="~/assets/exam123.png"
+            <Image col="4" width="30" height="30" src="~/assets/exam123.png" (tap)="onCertificationTapped()"
                    stretch="aspectFill" marginright="15"></Image>
             <Label col="5" text="&#xf1d9;" class="fa android-lbl"
                    verticalalignment="center" fontsize="25"></Label>
@@ -215,7 +215,7 @@
                               </ng-template>
                        </ListView>
                 </ScrollView>
-  
+
           </StackLayout>
     </GridLayout>
 
