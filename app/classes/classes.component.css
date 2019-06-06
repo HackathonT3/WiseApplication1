@@ -1,1 +1,12 @@
 /* Add mobile styles for the component here.  */
+ActionBar{
+    background-color:transparent;
+  }
+
+  #detail-page-background{
+    background-image: url("~/images/auditorium-benches-chairs-207691.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    /* margin-top:-30; */
+  }
