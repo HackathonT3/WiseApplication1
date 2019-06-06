@@ -21,7 +21,8 @@
                 {
                     "isOwn": false,
                     "imageSrc": "~/assets/exam.jpg",
-                    "title": "Take Exam"
+                    "title": "Take Exam",
+                    "route": "selector"
                 },
                 {
                     "isOwn": false,
