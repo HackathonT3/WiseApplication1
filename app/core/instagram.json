@@ -15,7 +15,8 @@
                 {
                     "isOwn": false,
                     "imageSrc": "~/assets/assignments.jpg",
-                    "title": "Assignments"
+                    "title": "Assignments",
+                    "route": "classes"
                 },
                 {
                     "isOwn": false,

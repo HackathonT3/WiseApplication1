@@ -8,7 +8,8 @@ import { LoginService } from './login.service';
 import { SchoolSearchComponent } from './school-search/school-search.component';
 import * as appSettings from "tns-core-modules/application-settings";
 import { ForgotPasswordPrompt } from './forgot-password/forgot-password.prompt';
-import { User } from '~/core/user';
+import { User } from '~/shared/user.model';
+
 @Component({
     selector: 'ns-login',
     templateUrl: './login.component.html',
@@ -29,6 +30,7 @@ export class LoginComponent {
 
         page.actionBarHidden = true;
         this.user = new User();
+        this.user.userName = appSettings.getString("user");
     }
     6
     register() {
@@ -36,7 +38,7 @@ export class LoginComponent {
     }
 
     submit() {
-        if (!this.user.username || !this.user.password) {
+        if (!this.user.userName || !this.user.password) {
             this.alert("Please provide both a username and password.");
             return;
         }
@@ -48,7 +50,7 @@ export class LoginComponent {
     login() {
         this.loginService.login(this.user).subscribe(res => {
             this.processing = false;
-            appSettings.setString("user", this.user.username);
+            appSettings.setString("user", this.user.userName);
             this.nav.navigate(["/dashboard"]);
         }, err => {
             this.alert("Username or password is incorrect");
@@ -82,7 +84,7 @@ export class LoginComponent {
 
         this._modalService.showModal(SchoolSearchComponent, options)
             .then((result: any) => {
-                this.user.school = result.school.name;
+                // this.user.school = result.school.name;
             });
     }
 }

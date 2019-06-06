@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders } from "@angular/common/http";
 import { Observable, of } from 'rxjs';
-import { User } from '../core/user';
+import { User } from '~/shared/user.model';
 @Injectable({
     providedIn: 'root'
 })
@@ -10,7 +10,7 @@ export class LoginService {
     constructor(private http: HttpClient) { }
 
     login(user: User) {
-        const queryParams = '?userName=' + user.username + '&password=' + user.password
+        const queryParams = '?userName=' + user.userName + '&password=' + user.password
         return this.http.get(this.serverUrl + queryParams);
     }
 
