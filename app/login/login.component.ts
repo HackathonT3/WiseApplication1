@@ -17,6 +17,8 @@ export class LoginComponent {
 
     user: any;
     processing = false;
+    forgotPasswordPrompt = new ForgotPasswordPrompt
+    
     @ViewChild("password") password: ElementRef;
 
     constructor(page: Page, private nav: RouterExtensions, private loginService: LoginService,
@@ -47,12 +49,13 @@ export class LoginComponent {
         this.loginService.login().subscribe(res => {
             this.processing = false;
             appSettings.setString("user", this.user.email);
-            this.alert('logged in as ' + appSettings.getString("user"))
+
+            this.nav.navigate(["/dashboard"]);
         });
     }
 
     forgotPassword() {
-        this.nav.navigate(["/home"]);
+        this.forgotPasswordPrompt.forgotPassword();
     }
 
     focusPassword() {
