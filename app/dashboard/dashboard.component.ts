@@ -45,8 +45,8 @@ export class DashboardComponent implements OnInit {
   private _landmarks: Landmark[];
   private _selectedView: View;
   private _adjustedOffset: number = 0;
-  @ViewChild("actionButton") _buttonRef: ActionButtonComponent;
-  @ViewChild("search") _searchRef: ElementRef;
+  // @ViewChild("actionButton") _buttonRef: ActionButtonComponent;
+  // @ViewChild("search") _searchRef: ElementRef;
   @ViewChild("list") _listRef: ElementRef;
   @ViewChild("animatingImage") _imageRef: ElementRef;
   @ViewChild("animatingImageContainer") _imageContainerRef: ElementRef;
@@ -196,8 +196,8 @@ export class DashboardComponent implements OnInit {
     this._imageContainerRef.nativeElement.translateY = this._adjustedOffset;
     this._imageContainerRef.nativeElement.opacity = 1;
 
-    this._buttonRef.makeArrow();
-    this._searchRef.nativeElement.opacity = 0;
+    // this._buttonRef.makeArrow();
+    // this._searchRef.nativeElement.opacity = 0;
 }
 
     public onNavigationItemTap(args: any) {
@@ -231,10 +231,10 @@ export class DashboardComponent implements OnInit {
         opacity: 1,
         duration: 200
     }).catch(() => { });
-    this._searchRef.nativeElement.animate({
-        opacity: 1,
-        duration: 200
-    }).catch(() => { });
+    // this._searchRef.nativeElement.animate({
+    //     opacity: 1,
+    //     duration: 200
+    // }).catch(() => { });
 }
 
     onCertificationTapped() {
