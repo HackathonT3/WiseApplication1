@@ -39,7 +39,7 @@ var LoginComponent = /** @class */ (function () {
         });
     };
     LoginComponent.prototype.forgotPassword = function () {
-        this.nav.navigate(["/selector"]);
+        this.nav.navigate(["/home"]);
     };
     LoginComponent.prototype.focusPassword = function () {
         this.password.nativeElement.focus();
