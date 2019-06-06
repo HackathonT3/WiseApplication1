@@ -8,7 +8,7 @@ import { LoginService } from './login.service';
 import { SchoolSearchComponent } from './school-search/school-search.component';
 import * as appSettings from "tns-core-modules/application-settings";
 import { ForgotPasswordPrompt } from './forgot-password/forgot-password.prompt';
-import { User } from '~/shared/user.model';
+import { User } from '../register/shared/user.model';
 
 @Component({
     selector: 'ns-login',

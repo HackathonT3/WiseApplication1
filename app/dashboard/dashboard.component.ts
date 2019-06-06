@@ -31,6 +31,8 @@ export class DashboardComponent implements OnInit {
 
   courses: any[] = [];
 
+  classes: any[] =[];
+
   isSelected: string = '0';
 
     constructor(
@@ -51,6 +53,8 @@ export class DashboardComponent implements OnInit {
     this.page.actionBarHidden = true;
     this.courses.push("Economics");
     this.courses.push("Personal Finance");
+    this.classes.push("Class 1");
+    this.classes.push("Class 2");
   }
 
   letsInitialize() {
@@ -114,6 +118,12 @@ export class DashboardComponent implements OnInit {
     let course = this.courses[args.index];
     this.alert("You have changed to course: " + course);
   }
+
+  onClassTap(args) {
+    let item = this.classes[args.index];
+    this.alert("You have chosen class: " + item);
+  }
+
     tapHeader(header) {
         if (header.route) {
             this.nav.navigate(["/" + header.route])
