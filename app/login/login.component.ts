@@ -7,7 +7,12 @@ import { Page } from 'tns-core-modules/ui/page/page';
 import { LoginService } from './login.service';
 import { SchoolSearchComponent } from './school-search/school-search.component';
 import * as appSettings from "tns-core-modules/application-settings";
+<<<<<<< HEAD
+import { ForgotPasswordPrompt } from './forgot-password/forgot-password.prompt';
+import { User } from '../register/shared/user.model';
+=======
 import { ForgotPasswordPrompt } from "./forgot-password/forgot-password.prompt"
+>>>>>>> 3636576f9193786f6dc36f27bee9625a99864c12
 
 @Component({
     selector: 'ns-login',
@@ -19,8 +24,12 @@ export class LoginComponent {
 
     user: any;
     processing = false;
+<<<<<<< HEAD
+    forgotPasswordPrompt = new ForgotPasswordPrompt();
+=======
     forgotPasswordPrompt = new ForgotPasswordPrompt;
     
+>>>>>>> 3636576f9193786f6dc36f27bee9625a99864c12
     @ViewChild("password") password: ElementRef;
 
     constructor(page: Page, private nav: RouterExtensions, private loginService: LoginService,
@@ -32,7 +41,10 @@ export class LoginComponent {
         this.user.email = "user@nativescript.org";
         this.user.password = "password";
     }
+<<<<<<< HEAD
+=======
 
+>>>>>>> 3636576f9193786f6dc36f27bee9625a99864c12
     register() {
         this.nav.navigate(["/student-register"]);
     }

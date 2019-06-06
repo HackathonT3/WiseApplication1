@@ -1,8 +1,8 @@
 import { Component, ElementRef, ViewChild, ViewContainerRef } from '@angular/core'
 
 import { alert,action } from "tns-core-modules/ui/dialogs";
-import { User } from '../shared/user.model';
-import { UserService } from '../shared/user.service';
+import { User } from './shared/user.model';
+import { UserService } from './shared/user.service';
 import { RouterExtensions } from "nativescript-angular/router";
 import { ModalDialogService } from "nativescript-angular/directives/dialogs";
 
@@ -26,16 +26,21 @@ export class StudentRegisterComponent {
   course = "Economics";
 
   constructor(private userService: UserService, 
-              private routerExtensions: RouterExtensions,
+              private nav: RouterExtensions,
               private vcRef: ViewContainerRef,
               private modal: ModalDialogService) { 
     this.user = new User();
+    this.user.setDob("null");
+    this.user.setGender(this.gender);
+    this.user.setMemberType(this.memberType);
+    this.user.setGradeLevel(this.gradeLevel);
+    this.user.setCourse(this.course);
+    this.user.memberId = 12;
   }
 
   register() {
       if (!this.user.email || !this.user.password || !this.user.confirmPassword ||
-          !this.user.userName || !this.user.firstName || !this.user.lastName ||
-          !this.user.dob || !this.user.gender || !this.user.memberType || !this.user.gradeLevel || !this.user.course
+          !this.user.userName || !this.user.firstName || !this.user.lastName || !this.user.memberType
         ) {
         this.alert("Please provide the required info.");
         return;
@@ -78,7 +83,7 @@ export class StudentRegisterComponent {
       viewContainerRef: this.vcRef
     };
     this.modal.showModal(DOBModalComponent, options).then(selectedDate => {
-        this.dob = selectedDate;
+        console.log(selectedDate);
       });
 
   }
@@ -92,7 +97,7 @@ export class StudentRegisterComponent {
 		};
 
 		action(options).then((result) => {
-			this.gender = (result == 'Cancel') ? this.gender : result;
+			this.user.setGender((result == 'Cancel') ? this.gender : result);
 		});
   }
   
@@ -105,7 +110,7 @@ export class StudentRegisterComponent {
 		};
 
 		action(options).then((result) => {
-			this.memberType = (result == 'Cancel') ? this.memberType : result;
+			this.user.setMemberType((result == 'Cancel') ? this.memberType : result);
 		});
   }
 
@@ -118,7 +123,7 @@ export class StudentRegisterComponent {
 		};
 
 		action(options).then((result) => {
-			this.gradeLevel = (result == 'Cancel') ? this.gradeLevel : result;
+			this.user.setGradeLevel((result == 'Cancel') ? this.gradeLevel : result);
 		});
   }
   
@@ -131,8 +136,13 @@ export class StudentRegisterComponent {
 		};
 
 		action(options).then((result) => {
-			this.course = (result == 'Cancel') ? this.course : result;
+			this.user.setCourse((result == 'Cancel') ? this.course : result);
 		});
-	}
+  }
+  
+  login() {
+    console.log('login');
+    this.nav.navigate(["/login"]);
+  }
 
 }

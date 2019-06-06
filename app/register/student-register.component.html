@@ -1,6 +1,6 @@
 <FlexboxLayout class="page">
     <StackLayout class="form">
-        <Label class="header" text="W!se Register"></Label>
+        <Label class="header" text="W!se register"></Label>
 
         <PreviousNextView>
             <ScrollView height="470" orientation="vertical">
@@ -49,7 +49,7 @@
                 </StackLayout>
 
                 <StackLayout row="7" class="input-field" height="35" orientation="horizontal">
-                    <Label text='Date of Birth*'  class="title-label"></Label>
+                    <Label text='Date of Birth'  class="title-label"></Label>
                     <Label text='{{ dob | date:"y/M/d" }}'
                         class="scf-input" (tap)="onOpenSelectDate()"></Label>
                     <Image src="~/images/arrow_down.png"
@@ -57,7 +57,7 @@
                 </StackLayout>
                 
                 <StackLayout row="8" class="input-field" height="35" orientation="horizontal">
-                    <Label text='Gender*'  class="title-label"></Label>
+                    <Label text='Gender'  class="title-label"></Label>
                     <Label text='{{ gender }}'
                         class="scf-input" (tap)="onOpenSelectGender()"></Label>
                     <Image src="~/images/arrow_down.png"
@@ -73,7 +73,7 @@
                 </StackLayout>
 
                 <StackLayout row="10" class="input-field" height="35" orientation="horizontal">
-                        <Label text='Grade Level*'  class="title-label"></Label>
+                        <Label text='Grade Level'  class="title-label"></Label>
                         <Label text='{{ gradeLevel }}'
                             class="scf-input" (tap)="onOpenSelectGradeLevel()"></Label>
                         <Image src="~/images/arrow_down.png"
@@ -81,7 +81,7 @@
                 </StackLayout>
 
                 <StackLayout row="11" class="input-field" height="35" orientation="horizontal">
-                        <Label text='Course*'  class="title-label"></Label>
+                        <Label text='Course'  class="title-label"></Label>
                         <Label text='{{ course }}'
                             class="scf-input" (tap)="onOpenSelectCourse()"></Label>
                         <Image src="~/images/arrow_down.png"
@@ -97,7 +97,7 @@
             (tap)="register()" class="btn btn-primary m-t-20"></Button>
     </StackLayout>
 
-    <Label class="sign-up-label" (tap)="toggleForm()">
+    <Label class="sign-up-label" (tap)="login()">
         <FormattedString>
             <Span text="Back to Login"></Span>
         </FormattedString>

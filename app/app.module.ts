@@ -4,7 +4,7 @@ import { AppRoutingModule } from "./app-routing.module";
 import { AppComponent } from "./app.component";
 import { HttpClientModule } from "@angular/common/http";
 
-import { UserService } from "./shared/user.service";
+import { UserService } from "./register/shared/user.service";
 import { FileReaderService } from "./core/fileReader.service";
 
 @NgModule({

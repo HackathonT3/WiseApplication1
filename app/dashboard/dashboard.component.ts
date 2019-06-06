@@ -6,6 +6,8 @@ import { CameraService } from "../core/camera.service";
 import { FileReaderService } from "../core/fileReader.service";
 import { FilterComponent } from "./filter/filter.component";
 import { ModalDialogOptions, ModalDialogService } from "nativescript-angular/modal-dialog";
+import { SearchBar } from "tns-core-modules/ui/search-bar";
+import { alert } from "tns-core-modules/ui/dialogs";
 import { RouterExtensions } from "nativescript-angular";
 import * as appSettings from "tns-core-modules/application-settings";
 import { action } from "tns-core-modules/ui/dialogs";
@@ -27,6 +29,10 @@ export class DashboardComponent implements OnInit {
 
   instagram: any[] = [];
 
+  courses: any[] = [];
+
+  classes: any[] =[];
+
   isSelected: string = '0';
 
     constructor(
@@ -45,6 +51,10 @@ export class DashboardComponent implements OnInit {
 
   ngOnInit(): void {
     this.page.actionBarHidden = true;
+    this.courses.push("Economics");
+    this.courses.push("Personal Finance");
+    this.classes.push("Class 1");
+    this.classes.push("Class 2");
   }
 
   letsInitialize() {
@@ -94,6 +104,24 @@ export class DashboardComponent implements OnInit {
     this.isSelected = selectedTab;
     this.selectedRoute = route;
     this.cd.detectChanges();
+  }
+
+  alert(message: string) {
+    return alert({
+        title: "Change Course",
+        okButtonText: "OK",
+        message: message
+    });
+  }
+
+  onCourseTap(args) {
+    let course = this.courses[args.index];
+    this.alert("You have changed to course: " + course);
+  }
+
+  onClassTap(args) {
+    let item = this.classes[args.index];
+    this.alert("You have chosen class: " + item);
   }
 
     tapHeader(header) {

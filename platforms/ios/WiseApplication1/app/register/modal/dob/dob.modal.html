@@ -1,0 +1,6 @@
+<GridLayout rows="auto, auto, auto"
+        verticalAlignment="center" id="selectDateGridLayout">
+        <DatePicker row="1" col="0" colSpan="2" [(ngModel)]="dateSelector"
+            (dateChange)="onDateChanged($event)" verticalAlignment="center"></DatePicker>
+        <Button row="2" col="1" text="OK" (tap)="close(dateSelector)"></Button>
+</GridLayout>

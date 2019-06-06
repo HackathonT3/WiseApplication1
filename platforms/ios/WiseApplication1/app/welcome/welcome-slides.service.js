@@ -1,0 +1,21 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = require("@angular/core");
+var WelcomeSlidesService = /** @class */ (function () {
+    function WelcomeSlidesService() {
+        this.slide1 = "<GridLayout row=\"0\" rows=\"*, 2*, *\">\n\n\n<GridLayout width=\"200%\" row=\"3\" horizontalAlignment=\"center\" verticalAlignment=\"center\">\n    <Label class=\"opensans-regular carousel-item-desc\" text=\"\nW!se\nNonprofit for Financial Education, \n    Career readiness programs\" textWrap=\"true\"></Label>\n</GridLayout>\n</GridLayout>\n";
+        this.slide2 = "<GridLayout row=\"0\" rows=\"*, 2*, *\">\n\n\n<GridLayout width=\"200%\" row=\"2\" horizontalAlignment=\"center\" verticalAlignment=\"center\">\n    <Label class=\"opensans-regular carousel-item-desc\" text=\"Diverse,Cutting-edge Financial Programs...\" textWrap=\"true\"></Label>\n</GridLayout>\n</GridLayout>\n";
+        this.slide3 = "<GridLayout row=\"0\" rows=\"*, 2*, *\">\n\n<GridLayout width=\"200%\" row=\"2\" horizontalAlignment=\"center\" verticalAlignment=\"center\">\n    <Label class=\"opensans-regular carousel-item-desc\" text=\"Envisioning nation with every person equipped with real-world skills necessary to achieve their goals.\" textWrap=\"true\"></Label>\n</GridLayout>\n</GridLayout>\n";
+        this.slides = [this.slide1, this.slide2, this.slide3];
+    }
+    WelcomeSlidesService.prototype.getSlides = function () {
+        return this.slides;
+    };
+    WelcomeSlidesService = __decorate([
+        core_1.Injectable(),
+        __metadata("design:paramtypes", [])
+    ], WelcomeSlidesService);
+    return WelcomeSlidesService;
+}());
+exports.WelcomeSlidesService = WelcomeSlidesService;
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoid2VsY29tZS1zbGlkZXMuc2VydmljZS5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIndlbGNvbWUtc2xpZGVzLnNlcnZpY2UudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7QUFBQSxzQ0FBMkM7QUFHM0M7SUE2Qkk7UUE1QlEsV0FBTSxHQUFHLDBWQVFwQixDQUFDO1FBRVUsV0FBTSxHQUFHLDBUQU9wQixDQUFDO1FBRVUsV0FBTSxHQUFHLG9YQU1wQixDQUFDO1FBSU0sSUFBSSxDQUFDLE1BQU0sR0FBRyxDQUFDLElBQUksQ0FBQyxNQUFNLEVBQUUsSUFBSSxDQUFDLE1BQU0sRUFBRSxJQUFJLENBQUMsTUFBTSxDQUFDLENBQUM7SUFDMUQsQ0FBQztJQUVELHdDQUFTLEdBQVQ7UUFDSSxPQUFPLElBQUksQ0FBQyxNQUFNLENBQUM7SUFDdkIsQ0FBQztJQW5DUSxvQkFBb0I7UUFEaEMsaUJBQVUsRUFBRTs7T0FDQSxvQkFBb0IsQ0FvQ2hDO0lBQUQsMkJBQUM7Q0FBQSxBQXBDRCxJQW9DQztBQXBDWSxvREFBb0IiLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyBJbmplY3RhYmxlIH0gZnJvbSBcIkBhbmd1bGFyL2NvcmVcIjtcblxuQEluamVjdGFibGUoKVxuZXhwb3J0IGNsYXNzIFdlbGNvbWVTbGlkZXNTZXJ2aWNlIHtcbiAgICBwcml2YXRlIHNsaWRlMSA9IGA8R3JpZExheW91dCByb3c9XCIwXCIgcm93cz1cIiosIDIqLCAqXCI+XG5cblxuPEdyaWRMYXlvdXQgd2lkdGg9XCIyMDAlXCIgcm93PVwiM1wiIGhvcml6b250YWxBbGlnbm1lbnQ9XCJjZW50ZXJcIiB2ZXJ0aWNhbEFsaWdubWVudD1cImNlbnRlclwiPlxuICAgIDxMYWJlbCBjbGFzcz1cIm9wZW5zYW5zLXJlZ3VsYXIgY2Fyb3VzZWwtaXRlbS1kZXNjXCIgdGV4dD1cIlxcblchc2VcXG5Ob25wcm9maXQgZm9yIEZpbmFuY2lhbCBFZHVjYXRpb24sIFxuICAgIENhcmVlciByZWFkaW5lc3MgcHJvZ3JhbXNcIiB0ZXh0V3JhcD1cInRydWVcIj48L0xhYmVsPlxuPC9HcmlkTGF5b3V0PlxuPC9HcmlkTGF5b3V0PlxuYDtcblxuICAgIHByaXZhdGUgc2xpZGUyID0gYDxHcmlkTGF5b3V0IHJvdz1cIjBcIiByb3dzPVwiKiwgMiosICpcIj5cblxuXG48R3JpZExheW91dCB3aWR0aD1cIjIwMCVcIiByb3c9XCIyXCIgaG9yaXpvbnRhbEFsaWdubWVudD1cImNlbnRlclwiIHZlcnRpY2FsQWxpZ25tZW50PVwiY2VudGVyXCI+XG4gICAgPExhYmVsIGNsYXNzPVwib3BlbnNhbnMtcmVndWxhciBjYXJvdXNlbC1pdGVtLWRlc2NcIiB0ZXh0PVwiRGl2ZXJzZSxDdXR0aW5nLWVkZ2UgRmluYW5jaWFsIFByb2dyYW1zLi4uXCIgdGV4dFdyYXA9XCJ0cnVlXCI+PC9MYWJlbD5cbjwvR3JpZExheW91dD5cbjwvR3JpZExheW91dD5cbmA7XG5cbiAgICBwcml2YXRlIHNsaWRlMyA9IGA8R3JpZExheW91dCByb3c9XCIwXCIgcm93cz1cIiosIDIqLCAqXCI+XG5cbjxHcmlkTGF5b3V0IHdpZHRoPVwiMjAwJVwiIHJvdz1cIjJcIiBob3Jpem9udGFsQWxpZ25tZW50PVwiY2VudGVyXCIgdmVydGljYWxBbGlnbm1lbnQ9XCJjZW50ZXJcIj5cbiAgICA8TGFiZWwgY2xhc3M9XCJvcGVuc2Fucy1yZWd1bGFyIGNhcm91c2VsLWl0ZW0tZGVzY1wiIHRleHQ9XCJFbnZpc2lvbmluZyBuYXRpb24gd2l0aCBldmVyeSBwZXJzb24gZXF1aXBwZWQgd2l0aCByZWFsLXdvcmxkIHNraWxscyBuZWNlc3NhcnkgdG8gYWNoaWV2ZSB0aGVpciBnb2Fscy5cIiB0ZXh0V3JhcD1cInRydWVcIj48L0xhYmVsPlxuPC9HcmlkTGF5b3V0PlxuPC9HcmlkTGF5b3V0PlxuYDtcblxuICAgIHByaXZhdGUgc2xpZGVzO1xuICAgIGNvbnN0cnVjdG9yKCkge1xuICAgICAgICB0aGlzLnNsaWRlcyA9IFt0aGlzLnNsaWRlMSwgdGhpcy5zbGlkZTIsIHRoaXMuc2xpZGUzXTtcbiAgICB9XG5cbiAgICBnZXRTbGlkZXMoKTogYW55IHtcbiAgICAgICAgcmV0dXJuIHRoaXMuc2xpZGVzO1xuICAgIH1cbn1cbiJdfQ==
