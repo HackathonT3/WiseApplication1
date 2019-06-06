@@ -11,6 +11,9 @@ const routes: Routes = [
     { path: "login", loadChildren: "./login/login.module#LoginModule" },
     { path: "dashboard", loadChildren: "./dashboard/dashboard.module#DashboardModule" },
     { path: "classes", loadChildren: "./classes/classes.module#ClassesModule" },
+    { path: "quiz", loadChildren: "./quiz/quiz.module#QuizModule" },
+    { path: "selector", loadChildren: "./quiz/selector/selector.module#SelectorModule" },
+    { path: "score", loadChildren: "./quiz/score/score.module#ScoreModule" },
 ];
 
 @NgModule({

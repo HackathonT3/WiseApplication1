@@ -1,0 +1,152 @@
+{
+    "categories": [
+        {
+            "title": "EASY",
+            "quizDate": "5 May",
+            "lastScore": "80%",
+            "backgroundColor": "#250046",
+            "image": "~/images/happy.png",
+            "questions": [
+                {
+                    "question": "An important consideration when deciding how to invest money being saved for emergencies is the...",
+                    "options": [
+                        "dividends being charged.",
+                        "degree of liquidity.",
+                        "limit on withdrawals.",
+                        "higher potential return."
+                    ],
+                    "correctAnswerIndex": 1,
+                    "rationale": "An emergency savings account needs to be easily converted to cash (liquid). Bank savings accounts are typically very liquid and safe because they are insured by the Federal Deposit Insurance Corporation (FDIC)."
+                },
+                {
+                    "question": "Which guideline is important to follow for successful budgeting?",
+                    "options": [
+                        "Get a copy of the person’s three credit reports each year.",
+                        "Know the location of the banks where accounts are held.",
+                        "Have expenses that are not greater than income.",
+                        "Earn a degree from a post-secondary education institution."
+                    ],
+                    "correctAnswerIndex": 2,
+                    "rationale": "The most important guideline to follow is to have a budget that has monthly expenses that do not exceed monthly income."
+                },
+                {
+                    "question": "When a check is made payable to cash, it...",
+                    "options": [
+                        "voids the check.",
+                        "creates a check that anyone can cash.",
+                        "does not allow the check to be deposited.",
+                        "restricts the life of the check to no more than 5 days."
+                    ],
+                    "correctAnswerIndex": 1,
+                    "rationale": "A check made payable to cash can be used by anyone in the event the check is lost or stolen. It is NOT a good idea."
+                },
+                {
+                    "question": "Which of the following is a nonprofit financial institution?",
+                    "options": [
+                        "Credit union.",
+                        "Savings and loan bank.",
+                        "Commercial bank.",
+                        "Real estate agency."
+                    ],
+                    "correctAnswerIndex": 0,
+                    "rationale": "Credit unions are nonprofit financial institutions that exists to serve their members (depositors) with financial products and services.  Banks and real estate agencies are for profit business."
+                },
+                {
+                    "question": "Most payday loans...",
+                    "options": [
+                        "include a fee paid to the federal government.",
+                        "are an inexpensive way to borrow.",
+                        "are extremely expensive.",
+                        "require the borrower to have a bank account."
+                    ],
+                    "correctAnswerIndex": 2,
+                    "rationale": "Disadvantages of taking a payday loan are that interest rates and fees are EXTREMELY high and the borrower gets into an ongoing cycle of needing to borrow against future income.  "
+                }
+            ]
+        },
+        {
+            "title": "MEDIUM",
+            "quizDate": "5 May",
+            "lastScore": "50%",
+            "backgroundColor": "#0D0735",
+            "image": "~/images/neutral.png",
+            "questions": [
+                {
+                    "question": "When an employee has money deducted from his paycheck to deposit into his employer’s retirement plan, the employee is contributing to his...",
+                    "options": [
+                        "401(k) plan.",
+                        "investment portfolio. ",
+                        "insurance plan.",
+                        "savings account."
+                    ],
+                    "correctAnswerIndex": 0,
+                    "rationale": "This employee is making contributions to a 401(k) retirement plan. In this type of plan, the employer may match the employee’s contributions up to a limit that is set by the employer. Employees can choose not to contribute. If they do not contribute, they lose the employer’s contribution."
+                },
+                {
+                    "question": "Which tax is the Internal Revenue Service (IRS) responsible for collecting?",
+                    "options": [
+                        "Sales tax.",
+                        "City tax.",
+                        "Federal income tax.",
+                        "Property tax."
+                    ],
+                    "correctAnswerIndex": 2,
+                    "rationale": "The IRS, an agency of the U.S. government, is responsible for collecting federal income taxes from people who earn income. "
+                },
+                {
+                    "question": "Which form of check endorsement is NOT recommended?",
+                    "options": [
+                        "Blank endorsement.",
+                        "Restrictive endorsement.",
+                        "Special endorsement.",
+                        "Credit endorsement."
+                    ],
+                    "correctAnswerIndex": 0,
+                    "rationale": "A blank endorsement is a person’s signature only on the back of a check which enables anyone to cash the check.  Therefore, a blank endorsement should NOT be used unless the person is inside the financial institution when endorsing the check to deposit or cash it. "
+                }
+            ]
+        },
+        {
+            "title": "DIFFICULT",
+            "quizDate": "5 May",
+            "lastScore": "25%",
+            "backgroundColor": "#020046",
+            "image": "~/images/sad.png",
+            "questions": [
+                {
+                    "question": "”A dollar today is worth more than a dollar tomorrow” best describes which economic condition?",
+                    "options": [
+                        "Inflation.",
+                        "Deflation.",
+                        "Prosperity.",
+                        "Recession."
+                    ],
+                    "correctAnswerIndex": 0,
+                    "rationale": "Inflation is characterized by a rise in the prices of goods and services. Therefore a dollar buys less, thus having less value. Over time, inflation occurs, making a dollar today more valuable in terms of the goods and services it can buy."
+                },
+                {
+                    "question": "Jacob lost his debit card. If Jacob reports his lost or stolen debit card within two business days, he can be held responsible for...",
+                    "options": [
+                        "up to $50 unauthorized transactions.",
+                        "up to $500 unauthorized transactions.",
+                        "all unauthorized transactions without a limit.",
+                        "no purchases."
+                    ],
+                    "correctAnswerIndex": 0,
+                    "rationale": "Under the Electronic Fund Transfer Act, if a consumer reports the theft of an EFT, ATM, or debit card to the issuing financial institution within two business days, he or she is liable for no more than $50 of unauthorized transfers."
+                },
+                {
+                    "question": "One advantage of having a home equity loan is that...",
+                    "options": [
+                        "it is interest free for the homeowner.",
+                        "it increases the value of  the person’s home.",
+                        "the interest paid on the loan is tax deductible.",
+                        "the monthly mortgage loan payments are reduced."
+                    ],
+                    "correctAnswerIndex": 2,
+                    "rationale": "The interest paid on a home equity loan is tax deductible. This feature makes it attractive to people who are considering a renovation on their home or need to make costly improvements."
+                }
+            ]
+        }
+    ]
+}
