@@ -1,0 +1,30 @@
+PODS:
+  - IQKeyboardManager (6.2.1)
+  - QBImagePickerController (3.4.0)
+  - SAMKeychain (1.5.3)
+  - SDWebImage (5.0.5):
+    - SDWebImage/Core (= 5.0.5)
+  - SDWebImage/Core (5.0.5)
+
+DEPENDENCIES:
+  - IQKeyboardManager (~> 6.2.0)
+  - QBImagePickerController (~> 3.4.0)
+  - SAMKeychain (~> 1.5.2)
+  - SDWebImage (>= 5.0.1)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - IQKeyboardManager
+    - QBImagePickerController
+    - SAMKeychain
+    - SDWebImage
+
+SPEC CHECKSUMS:
+  IQKeyboardManager: 964638372b4a61892cc74fdfa6fd26de8c9464a2
+  QBImagePickerController: d54cf93db6decf26baf6ed3472f336ef35cae022
+  SAMKeychain: 483e1c9f32984d50ca961e26818a534283b4cd5c
+  SDWebImage: f86b0a0713195d1c734335d010697d44af10d165
+
+PODFILE CHECKSUM: e062259eb80c7ccfa209ef1a1bc900a94402ec4f
+
+COCOAPODS: 1.7.1

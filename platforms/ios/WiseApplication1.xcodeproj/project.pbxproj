@@ -1,0 +1,607 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1288430EDAF3402DA7E2D3EB /* TNSCore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 287D79F8677D49B29B845868 /* TNSCore.framework */; };
+		19109D37709F453BA8A24445 /* NSImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 94B8E5E8A78D49A791FA1545 /* NSImageView.m */; };
+		1B203836FACA4D0880026B62 /* TNSCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 287D79F8677D49B29B845868 /* TNSCore.framework */; };
+		28F83F746E884E3FB26F59C7 /* TNSDataForm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D15982E6DE6431FAD6B3BEE /* TNSDataForm.framework */; };
+		2CD5FCB4E679412DACABDF31 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 057C6D1A0BE14D9598672F3C /* Assets.xcassets */; };
+		34580B2D6A0E4695AD067E5D /* TNSSideDrawer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2A7C9AEA9784814BA3B34A8 /* TNSSideDrawer.framework */; };
+		36B6B9902A424EDD8413D28F /* TNSSideDrawer.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B2A7C9AEA9784814BA3B34A8 /* TNSSideDrawer.framework */; };
+		3F22F85DD77C49A9BD3CDBFE /* TNSGauge.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 9C1BEC18D6C24214AAF26AFC /* TNSGauge.framework */; };
+		400AD123013E49E3B5166748 /* sqlitewrapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0E0ADC2BF1124BF9ACAB2388 /* sqlitewrapper.framework */; };
+		44C11D21FCE1477B921F1BBB /* TNSListView.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 114ECAC30A8F46759620E23B /* TNSListView.framework */; };
+		4E5DA4DDB50B44ACAACE13D9 /* TNSDataForm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6D15982E6DE6431FAD6B3BEE /* TNSDataForm.framework */; };
+		5B997E09C9944C59B87637A6 /* TNSCalendar.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3B06AC6DD4B342138E697A10 /* TNSCalendar.framework */; };
+		5F7A860C98A64FE6A6AC2558 /* TNSWidgets.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBB59DC8DD0B4B23BB00F66D /* TNSWidgets.framework */; };
+		6FF797ABAD194F05A1698C90 /* TNSChart.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6C33202ADFE64B608B903F94 /* TNSChart.framework */; };
+		7A377AFF93F6489799A46607 /* sqlitewrapper.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 0E0ADC2BF1124BF9ACAB2388 /* sqlitewrapper.framework */; };
+		858B842D18CA22B800AB12DE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 858B833A18CA111C00AB12DE /* InfoPlist.strings */; };
+		8646E57054F14FBBB00B7C22 /* TNSGauge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C1BEC18D6C24214AAF26AFC /* TNSGauge.framework */; };
+		8D4BA8143212E462DA3B35B9 /* Pods_WiseApplication1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A551754C70C13ED5F148928 /* Pods_WiseApplication1.framework */; };
+		8E2057A223034E08A958562A /* TNSCalendar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B06AC6DD4B342138E697A10 /* TNSCalendar.framework */; };
+		984960F608244CFF994C1200 /* build.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = E519156AD6CF4DE29771FEF7 /* build.xcconfig */; };
+		B2345F4348EF47C093B1AD55 /* TNSAutoComplete.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00FEDA18B89140928EDD27D9 /* TNSAutoComplete.framework */; };
+		B412E7E7667F42608202CB97 /* TNSWidgets.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = EBB59DC8DD0B4B23BB00F66D /* TNSWidgets.framework */; };
+		B47095EDB1804B61B53BF3BB /* TNSListView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 114ECAC30A8F46759620E23B /* TNSListView.framework */; };
+		CD45EE7C18DC2D5800FB50C0 /* app in Resources */ = {isa = PBXBuildFile; fileRef = CD45EE7A18DC2D5800FB50C0 /* app */; };
+		CD62955D1BB2678900AE3A93 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CD62955C1BB2678900AE3A93 /* main.m */; };
+		D4152A5876E247A2B9FF54C8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3244B616D5A24A87B6AAFC75 /* LaunchScreen.storyboard */; };
+		E746098960F6479BB93CAACE /* TNSAutoComplete.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 00FEDA18B89140928EDD27D9 /* TNSAutoComplete.framework */; };
+		EA88C8E2D64C4CEEBCDF9702 /* TNSChart.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C33202ADFE64B608B903F94 /* TNSChart.framework */; };
+		F9E40368CDF246E295722DAA /* NativeScriptEmbedder.m in Sources */ = {isa = PBXBuildFile; fileRef = EE6EF525F5A1461D80B83F93 /* NativeScriptEmbedder.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		85F5BDFC1A9363BE006B9701 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				E746098960F6479BB93CAACE /* TNSAutoComplete.framework in Embed Frameworks */,
+				5B997E09C9944C59B87637A6 /* TNSCalendar.framework in Embed Frameworks */,
+				6FF797ABAD194F05A1698C90 /* TNSChart.framework in Embed Frameworks */,
+				4E5DA4DDB50B44ACAACE13D9 /* TNSDataForm.framework in Embed Frameworks */,
+				3F22F85DD77C49A9BD3CDBFE /* TNSGauge.framework in Embed Frameworks */,
+				44C11D21FCE1477B921F1BBB /* TNSListView.framework in Embed Frameworks */,
+				36B6B9902A424EDD8413D28F /* TNSSideDrawer.framework in Embed Frameworks */,
+				7A377AFF93F6489799A46607 /* sqlitewrapper.framework in Embed Frameworks */,
+				1288430EDAF3402DA7E2D3EB /* TNSCore.framework in Embed Frameworks */,
+				B412E7E7667F42608202CB97 /* TNSWidgets.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		00FEDA18B89140928EDD27D9 /* TNSAutoComplete.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = TNSAutoComplete.framework; path = "$(SRCROOT)/../../node_modules/nativescript-ui-autocomplete/platforms/ios/TNSAutoComplete.framework"; sourceTree = "<group>"; };
+		057C6D1A0BE14D9598672F3C /* Assets.xcassets */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = WiseApplication1/Resources/Assets.xcassets; sourceTree = "<group>"; };
+		0E0ADC2BF1124BF9ACAB2388 /* sqlitewrapper.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = sqlitewrapper.framework; path = "$(SRCROOT)/../../node_modules/nativescript-sqlite/platforms/ios/sqlitewrapper.framework"; sourceTree = "<group>"; };
+		114ECAC30A8F46759620E23B /* TNSListView.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = TNSListView.framework; path = "$(SRCROOT)/../../node_modules/nativescript-ui-listview/platforms/ios/TNSListView.framework"; sourceTree = "<group>"; };
+		287D79F8677D49B29B845868 /* TNSCore.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = TNSCore.framework; path = "$(SRCROOT)/../../node_modules/nativescript-ui-core/platforms/ios/TNSCore.framework"; sourceTree = "<group>"; };
+		2CA2591C45CE4B978074E7BC /* module.modulemap */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = "sourcecode.module-map"; name = module.modulemap; path = "../../node_modules/tns-core-modules/platforms/ios/src/module.modulemap"; sourceTree = "<group>"; };
+		3244B616D5A24A87B6AAFC75 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = LaunchScreen.storyboard; path = WiseApplication1/Resources/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		391174B321F1CBD300BA2583 /* TNSDebugging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TNSDebugging.h; path = internal/TNSDebugging.h; sourceTree = SOURCE_ROOT; };
+		391174B421F1CBD300BA2583 /* TNSExceptionHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TNSExceptionHandler.h; path = internal/TNSExceptionHandler.h; sourceTree = SOURCE_ROOT; };
+		391174B521F1D7BF00BA2583 /* nativescript-build.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "nativescript-build.xcconfig"; path = "internal/nativescript-build.xcconfig"; sourceTree = SOURCE_ROOT; };
+		391174B721F1D99900BA2583 /* plugins-release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "plugins-release.xcconfig"; sourceTree = SOURCE_ROOT; };
+		391174B821F1D99900BA2583 /* plugins-debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "plugins-debug.xcconfig"; sourceTree = SOURCE_ROOT; };
+		3B06AC6DD4B342138E697A10 /* TNSCalendar.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = TNSCalendar.framework; path = "$(SRCROOT)/../../node_modules/nativescript-ui-calendar/platforms/ios/TNSCalendar.framework"; sourceTree = "<group>"; };
+		4A551754C70C13ED5F148928 /* Pods_WiseApplication1.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WiseApplication1.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C33202ADFE64B608B903F94 /* TNSChart.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = TNSChart.framework; path = "$(SRCROOT)/../../node_modules/nativescript-ui-chart/platforms/ios/TNSChart.framework"; sourceTree = "<group>"; };
+		6D15982E6DE6431FAD6B3BEE /* TNSDataForm.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = TNSDataForm.framework; path = "$(SRCROOT)/../../node_modules/nativescript-ui-dataform/platforms/ios/TNSDataForm.framework"; sourceTree = "<group>"; };
+		858B832E18CA111C00AB12DE /* WiseApplication1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WiseApplication1.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		858B833918CA111C00AB12DE /* WiseApplication1-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WiseApplication1-Info.plist"; sourceTree = "<group>"; };
+		858B833B18CA111C00AB12DE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		858B833F18CA111C00AB12DE /* WiseApplication1-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WiseApplication1-Prefix.pch"; sourceTree = "<group>"; };
+		858B843318CA22B800AB12DE /* WiseApplication1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WiseApplication1.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A5DABF77F148AE391988560 /* Pods-WiseApplication1.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WiseApplication1.debug.xcconfig"; path = "Target Support Files/Pods-WiseApplication1/Pods-WiseApplication1.debug.xcconfig"; sourceTree = "<group>"; };
+		930F05DB22671AE300D269DC /* Swift-ObjC-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Swift-ObjC-Bridging-Header.h"; path = "internal/Swift-ObjC-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
+		94B8E5E8A78D49A791FA1545 /* NSImageView.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = NSImageView.m; path = "../../node_modules/nativescript-image/platforms/ios/src/NSImageView.m"; sourceTree = "<group>"; };
+		9C1BEC18D6C24214AAF26AFC /* TNSGauge.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = TNSGauge.framework; path = "$(SRCROOT)/../../node_modules/nativescript-ui-gauge/platforms/ios/TNSGauge.framework"; sourceTree = "<group>"; };
+		A3C88ADB2D9D4F7591E38A49 /* NativeScriptEmbedder.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = NativeScriptEmbedder.h; path = "../../node_modules/tns-core-modules/platforms/ios/src/NativeScriptEmbedder.h"; sourceTree = "<group>"; };
+		B2A7C9AEA9784814BA3B34A8 /* TNSSideDrawer.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = TNSSideDrawer.framework; path = "$(SRCROOT)/../../node_modules/nativescript-ui-sidedrawer/platforms/ios/TNSSideDrawer.framework"; sourceTree = "<group>"; };
+		CD45EE7A18DC2D5800FB50C0 /* app */ = {isa = PBXFileReference; lastKnownFileType = folder; path = app; sourceTree = "<group>"; };
+		CD62955C1BB2678900AE3A93 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = internal/main.m; sourceTree = SOURCE_ROOT; };
+		CDD59A261BB43B5D00EC2671 /* build-debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "build-debug.xcconfig"; sourceTree = "<group>"; };
+		CDD59A271BB43B5D00EC2671 /* build-release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = "build-release.xcconfig"; sourceTree = "<group>"; };
+		CDF4743E1BA4855C0087EA85 /* build.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = build.xcconfig; sourceTree = "<group>"; };
+		D0E5B1978B60D0FC73A386B3 /* Pods-WiseApplication1.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WiseApplication1.release.xcconfig"; path = "Target Support Files/Pods-WiseApplication1/Pods-WiseApplication1.release.xcconfig"; sourceTree = "<group>"; };
+		E519156AD6CF4DE29771FEF7 /* build.xcconfig */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = text.xcconfig; name = build.xcconfig; path = WiseApplication1/Resources/build.xcconfig; sourceTree = "<group>"; };
+		EBB59DC8DD0B4B23BB00F66D /* TNSWidgets.framework */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = wrapper.framework; name = TNSWidgets.framework; path = "$(SRCROOT)/../../node_modules/tns-core-modules-widgets/platforms/ios/TNSWidgets.framework"; sourceTree = "<group>"; };
+		EE6EF525F5A1461D80B83F93 /* NativeScriptEmbedder.m */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.objc; name = NativeScriptEmbedder.m; path = "../../node_modules/tns-core-modules/platforms/ios/src/NativeScriptEmbedder.m"; sourceTree = "<group>"; };
+		F3E0826731A343748100D55C /* NSImage.h */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = sourcecode.c.h; name = NSImage.h; path = "../../node_modules/nativescript-image/platforms/ios/src/NSImage.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		858B83F418CA22B800AB12DE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B2345F4348EF47C093B1AD55 /* TNSAutoComplete.framework in Frameworks */,
+				8E2057A223034E08A958562A /* TNSCalendar.framework in Frameworks */,
+				EA88C8E2D64C4CEEBCDF9702 /* TNSChart.framework in Frameworks */,
+				28F83F746E884E3FB26F59C7 /* TNSDataForm.framework in Frameworks */,
+				8646E57054F14FBBB00B7C22 /* TNSGauge.framework in Frameworks */,
+				B47095EDB1804B61B53BF3BB /* TNSListView.framework in Frameworks */,
+				34580B2D6A0E4695AD067E5D /* TNSSideDrawer.framework in Frameworks */,
+				400AD123013E49E3B5166748 /* sqlitewrapper.framework in Frameworks */,
+				1B203836FACA4D0880026B62 /* TNSCore.framework in Frameworks */,
+				5F7A860C98A64FE6A6AC2558 /* TNSWidgets.framework in Frameworks */,
+				8D4BA8143212E462DA3B35B9 /* Pods_WiseApplication1.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		250B15B4E7D9A06FA5DA6BDD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8A5DABF77F148AE391988560 /* Pods-WiseApplication1.debug.xcconfig */,
+				D0E5B1978B60D0FC73A386B3 /* Pods-WiseApplication1.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		60564880D93A444C8E78E43A /* TNSNativeSource */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = TNSNativeSource;
+			sourceTree = "<group>";
+		};
+		858B832518CA111C00AB12DE = {
+			isa = PBXGroup;
+			children = (
+				E070579D1B39A9D000214BF1 /* Resources */,
+				858B833718CA111C00AB12DE /* WiseApplication1 */,
+				858B833018CA111C00AB12DE /* Frameworks */,
+				858B832F18CA111C00AB12DE /* Products */,
+				60564880D93A444C8E78E43A /* TNSNativeSource */,
+				D0B6CE59D18341FEAF150EB8 /* nativescript-image */,
+				BEED2739A39C4C3AB50EBBFC /* tns-core-modules */,
+				250B15B4E7D9A06FA5DA6BDD /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		858B832F18CA111C00AB12DE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				858B832E18CA111C00AB12DE /* WiseApplication1.app */,
+				858B843318CA22B800AB12DE /* WiseApplication1.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		858B833018CA111C00AB12DE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				00FEDA18B89140928EDD27D9 /* TNSAutoComplete.framework */,
+				3B06AC6DD4B342138E697A10 /* TNSCalendar.framework */,
+				6C33202ADFE64B608B903F94 /* TNSChart.framework */,
+				6D15982E6DE6431FAD6B3BEE /* TNSDataForm.framework */,
+				9C1BEC18D6C24214AAF26AFC /* TNSGauge.framework */,
+				114ECAC30A8F46759620E23B /* TNSListView.framework */,
+				B2A7C9AEA9784814BA3B34A8 /* TNSSideDrawer.framework */,
+				0E0ADC2BF1124BF9ACAB2388 /* sqlitewrapper.framework */,
+				287D79F8677D49B29B845868 /* TNSCore.framework */,
+				EBB59DC8DD0B4B23BB00F66D /* TNSWidgets.framework */,
+				4A551754C70C13ED5F148928 /* Pods_WiseApplication1.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		858B833718CA111C00AB12DE /* WiseApplication1 */ = {
+			isa = PBXGroup;
+			children = (
+				CD45EE7A18DC2D5800FB50C0 /* app */,
+				858B833818CA111C00AB12DE /* Supporting Files */,
+			);
+			path = WiseApplication1;
+			sourceTree = "<group>";
+		};
+		858B833818CA111C00AB12DE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				391174B821F1D99900BA2583 /* plugins-debug.xcconfig */,
+				391174B721F1D99900BA2583 /* plugins-release.xcconfig */,
+				391174B321F1CBD300BA2583 /* TNSDebugging.h */,
+				391174B421F1CBD300BA2583 /* TNSExceptionHandler.h */,
+				CDF4743E1BA4855C0087EA85 /* build.xcconfig */,
+				CDD59A261BB43B5D00EC2671 /* build-debug.xcconfig */,
+				CDD59A271BB43B5D00EC2671 /* build-release.xcconfig */,
+				391174B521F1D7BF00BA2583 /* nativescript-build.xcconfig */,
+				858B833918CA111C00AB12DE /* WiseApplication1-Info.plist */,
+				858B833A18CA111C00AB12DE /* InfoPlist.strings */,
+				CD62955C1BB2678900AE3A93 /* main.m */,
+				858B833F18CA111C00AB12DE /* WiseApplication1-Prefix.pch */,
+				930F05DB22671AE300D269DC /* Swift-ObjC-Bridging-Header.h */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BEED2739A39C4C3AB50EBBFC /* tns-core-modules */ = {
+			isa = PBXGroup;
+			children = (
+				A3C88ADB2D9D4F7591E38A49 /* NativeScriptEmbedder.h */,
+				EE6EF525F5A1461D80B83F93 /* NativeScriptEmbedder.m */,
+				2CA2591C45CE4B978074E7BC /* module.modulemap */,
+			);
+			name = "tns-core-modules";
+			sourceTree = "<group>";
+		};
+		D0B6CE59D18341FEAF150EB8 /* nativescript-image */ = {
+			isa = PBXGroup;
+			children = (
+				F3E0826731A343748100D55C /* NSImage.h */,
+				94B8E5E8A78D49A791FA1545 /* NSImageView.m */,
+			);
+			name = "nativescript-image";
+			sourceTree = "<group>";
+		};
+		E070579D1B39A9D000214BF1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				057C6D1A0BE14D9598672F3C /* Assets.xcassets */,
+				3244B616D5A24A87B6AAFC75 /* LaunchScreen.storyboard */,
+				E519156AD6CF4DE29771FEF7 /* build.xcconfig */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		858B83EF18CA22B800AB12DE /* WiseApplication1 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 858B843018CA22B800AB12DE /* Build configuration list for PBXNativeTarget "WiseApplication1" */;
+			buildPhases = (
+				1BEF2A517BC50F284096A033 /* [CP] Check Pods Manifest.lock */,
+				C97FD7AC1ADE5369004DB2A4 /* NativeScript PreBuild */,
+				858B83F218CA22B800AB12DE /* Sources */,
+				CD62955B1BB2651D00AE3A93 /* NativeScript PreLink */,
+				858B83F418CA22B800AB12DE /* Frameworks */,
+				858B842C18CA22B800AB12DE /* Resources */,
+				85F5BDFC1A9363BE006B9701 /* Embed Frameworks */,
+				CD3EAD351B05FF060042DBFC /* NativeScript PostBuild */,
+				1BD4948B38D5614C0CBDB844 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WiseApplication1;
+			productName = JDBridgeApp;
+			productReference = 858B843318CA22B800AB12DE /* WiseApplication1.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		858B832618CA111C00AB12DE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = TNS;
+				LastUpgradeCheck = 500;
+				ORGANIZATIONNAME = Telerik;
+			};
+			buildConfigurationList = 858B832918CA111C00AB12DE /* Build configuration list for PBXProject "WiseApplication1" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 858B832518CA111C00AB12DE;
+			productRefGroup = 858B832F18CA111C00AB12DE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				858B83EF18CA22B800AB12DE /* WiseApplication1 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		858B842C18CA22B800AB12DE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD45EE7C18DC2D5800FB50C0 /* app in Resources */,
+				858B842D18CA22B800AB12DE /* InfoPlist.strings in Resources */,
+				2CD5FCB4E679412DACABDF31 /* Assets.xcassets in Resources */,
+				D4152A5876E247A2B9FF54C8 /* LaunchScreen.storyboard in Resources */,
+				984960F608244CFF994C1200 /* build.xcconfig in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1BD4948B38D5614C0CBDB844 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WiseApplication1/Pods-WiseApplication1-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/IQKeyboardManager/IQKeyboardManager.framework",
+				"${BUILT_PRODUCTS_DIR}/QBImagePickerController/QBImagePickerController.framework",
+				"${BUILT_PRODUCTS_DIR}/SAMKeychain/SAMKeychain.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManager.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/QBImagePickerController.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SAMKeychain.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WiseApplication1/Pods-WiseApplication1-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1BEF2A517BC50F284096A033 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WiseApplication1-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C97FD7AC1ADE5369004DB2A4 /* NativeScript PreBuild */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "NativeScript PreBuild";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$SRCROOT/internal/nativescript-pre-build\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CD3EAD351B05FF060042DBFC /* NativeScript PostBuild */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "NativeScript PostBuild";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$SRCROOT/internal/nativescript-post-build\"";
+			showEnvVarsInLog = 0;
+		};
+		CD62955B1BB2651D00AE3A93 /* NativeScript PreLink */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "NativeScript PreLink";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"$SRCROOT/internal/nativescript-pre-link\"";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		858B83F218CA22B800AB12DE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD62955D1BB2678900AE3A93 /* main.m in Sources */,
+				19109D37709F453BA8A24445 /* NSImageView.m in Sources */,
+				F9E40368CDF246E295722DAA /* NativeScriptEmbedder.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		858B833A18CA111C00AB12DE /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				858B833B18CA111C00AB12DE /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		858B835818CA111C00AB12DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD = "$SRCROOT/internal/nsld.sh";
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				STRIP_SWIFT_SYMBOLS = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "$SRCROOT/internal/Swift-ObjC-Bridging-Header.h";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		858B835918CA111C00AB12DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD = "$SRCROOT/internal/nsld.sh";
+				SDKROOT = iphoneos;
+				STRIP_SWIFT_SYMBOLS = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "$SRCROOT/internal/Swift-ObjC-Bridging-Header.h";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		858B843118CA22B800AB12DE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CDD59A261BB43B5D00EC2671 /* build-debug.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../node_modules/nativescript-ui-autocomplete/platforms/ios\"",
+					"\"$(SRCROOT)/../../node_modules/nativescript-ui-calendar/platforms/ios\"",
+					"\"$(SRCROOT)/../../node_modules/nativescript-ui-chart/platforms/ios\"",
+					"\"$(SRCROOT)/../../node_modules/nativescript-ui-dataform/platforms/ios\"",
+					"\"$(SRCROOT)/../../node_modules/nativescript-ui-gauge/platforms/ios\"",
+					"\"$(SRCROOT)/../../node_modules/nativescript-ui-listview/platforms/ios\"",
+					"\"$(SRCROOT)/../../node_modules/nativescript-ui-sidedrawer/platforms/ios\"",
+					"\"$(SRCROOT)/../../node_modules/nativescript-sqlite/platforms/ios\"",
+					"\"$(SRCROOT)/../../node_modules/nativescript-ui-core/platforms/ios\"",
+					"\"$(SRCROOT)/../../node_modules/tns-core-modules-widgets/platforms/ios\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WiseApplication1/WiseApplication1-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$SRCROOT/internal/Swift-Modules",
+					"$(SRCROOT)/internal",
+					"\"$(SRCROOT)/../../app/App_Resources/iOS/src\"",
+					"\"$(SRCROOT)/../../node_modules/nativescript-image/platforms/ios/src\"",
+					"\"$(SRCROOT)/../../node_modules/tns-core-modules/platforms/ios/src\"",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/WiseApplication1/WiseApplication1-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = WiseApplication1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		858B843218CA22B800AB12DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CDD59A271BB43B5D00EC2671 /* build-release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../node_modules/nativescript-ui-autocomplete/platforms/ios\"",
+					"\"$(SRCROOT)/../../node_modules/nativescript-ui-calendar/platforms/ios\"",
+					"\"$(SRCROOT)/../../node_modules/nativescript-ui-chart/platforms/ios\"",
+					"\"$(SRCROOT)/../../node_modules/nativescript-ui-dataform/platforms/ios\"",
+					"\"$(SRCROOT)/../../node_modules/nativescript-ui-gauge/platforms/ios\"",
+					"\"$(SRCROOT)/../../node_modules/nativescript-ui-listview/platforms/ios\"",
+					"\"$(SRCROOT)/../../node_modules/nativescript-ui-sidedrawer/platforms/ios\"",
+					"\"$(SRCROOT)/../../node_modules/nativescript-sqlite/platforms/ios\"",
+					"\"$(SRCROOT)/../../node_modules/nativescript-ui-core/platforms/ios\"",
+					"\"$(SRCROOT)/../../node_modules/tns-core-modules-widgets/platforms/ios\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WiseApplication1/WiseApplication1-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$SRCROOT/internal/Swift-Modules",
+					"$(SRCROOT)/internal",
+					"\"$(SRCROOT)/../../app/App_Resources/iOS/src\"",
+					"\"$(SRCROOT)/../../node_modules/nativescript-image/platforms/ios/src\"",
+					"\"$(SRCROOT)/../../node_modules/tns-core-modules/platforms/ios/src\"",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/WiseApplication1/WiseApplication1-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = WiseApplication1;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		858B832918CA111C00AB12DE /* Build configuration list for PBXProject "WiseApplication1" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				858B835818CA111C00AB12DE /* Debug */,
+				858B835918CA111C00AB12DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		858B843018CA22B800AB12DE /* Build configuration list for PBXNativeTarget "WiseApplication1" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				858B843118CA22B800AB12DE /* Debug */,
+				858B843218CA22B800AB12DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 858B832618CA111C00AB12DE /* Project object */;
+}

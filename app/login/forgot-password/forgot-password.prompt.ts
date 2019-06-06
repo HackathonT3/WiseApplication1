@@ -27,6 +27,7 @@ export class ForgotPasswordPrompt {
     // To-do: probably should match against email when submitting.
     // If they don't match, don't do anything.
     resetPassword(email : string) {
+        Kinvey.init();
         return Kinvey.User.resetPassword(email)
             .catch(this.handleErrors);
     }
