@@ -9,11 +9,6 @@
                 },
                 {
                     "isOwn": false,
-                    "imageSrc": "~/assets/face2.jpg",
-                    "title": "Course"
-                },
-                {
-                    "isOwn": false,
                     "imageSrc": "~/assets/assignments.jpg",
                     "title": "Assignments",
                     "route": "classes"

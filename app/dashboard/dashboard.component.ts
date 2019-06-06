@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewContainerRef, ChangeDetectorRef } from "@angular/core";
+import { Component, OnInit, ViewContainerRef, ChangeDetectorRef, ViewChild, ElementRef } from "@angular/core";
 import { Page } from "ui/page";
 import { screen } from "platform";
 import { PhotosService } from "../core/photos.service";
@@ -11,6 +11,13 @@ import { alert } from "tns-core-modules/ui/dialogs";
 import { RouterExtensions } from "nativescript-angular";
 import * as appSettings from "tns-core-modules/application-settings";
 import { action } from "tns-core-modules/ui/dialogs";
+import { LandmarksService } from "./landmarks-service";
+import { Landmark } from "./landmark";
+import { AnimationsService } from "./animations-service";
+import { View } from "tns-core-modules/ui/core/view";
+import { ActionButtonComponent } from "./action-button/action-button.component";
+import { AnimationCurve } from "tns-core-modules/ui/enums";
+import { PlatformLocation } from '@angular/common';
 
 @Component({
   selector: 'ns-dashboard',
@@ -35,6 +42,16 @@ export class DashboardComponent implements OnInit {
 
   isSelected: string = '0';
 
+  private _landmarks: Landmark[];
+  private _selectedView: View;
+  private _adjustedOffset: number = 0;
+  @ViewChild("actionButton") _buttonRef: ActionButtonComponent;
+  @ViewChild("search") _searchRef: ElementRef;
+  @ViewChild("list") _listRef: ElementRef;
+  @ViewChild("animatingImage") _imageRef: ElementRef;
+  @ViewChild("animatingImageContainer") _imageContainerRef: ElementRef;
+
+
     constructor(
         private photosService: PhotosService,
         private camera: CameraService,
@@ -43,7 +60,12 @@ export class DashboardComponent implements OnInit {
         private modal: ModalDialogService,
         private vref: ViewContainerRef,
         private cd: ChangeDetectorRef,
-        private nav: RouterExtensions) {
+        private nav: RouterExtensions,
+        private landmarksService: LandmarksService,
+        private animationsService: AnimationsService,
+        private location: PlatformLocation) {
+          this.page['scrollableContent'] = true;
+          this._landmarks = this.landmarksService.getLandmarks();
 
         this.photos = this.photosService.getPhotos();
         this.letsInitialize();
@@ -53,8 +75,17 @@ export class DashboardComponent implements OnInit {
     this.page.actionBarHidden = true;
     this.courses.push("Economics");
     this.courses.push("Personal Finance");
+    this.courses.push("Business Class");
+    this.courses.push("Consumer Science");
+    this.courses.push("Mathmatics");
+    this.courses.push("Financial Planning");
+    this.courses.push("Academy of Finance");
+    this.courses.push("Entrepreneurship");
     this.classes.push("Class 1");
     this.classes.push("Class 2");
+    this.location.onPopState(() => {
+      this._onNavigatedTo();
+  });
   }
 
   letsInitialize() {
@@ -144,4 +175,66 @@ export class DashboardComponent implements OnInit {
             }
 });
     }
+
+    get landmarks() {
+      return this._landmarks;
+  }
+
+    private measureOffset(view1: View, view2: View) {
+      let offset = view1.getLocationRelativeTo(view2).y;
+      if (view2.ios && view2.ios.adjustedContentInset) {
+          this._adjustedOffset = view2.ios.adjustedContentInset.top;
+      }
+      return offset - this._adjustedOffset;
+  }
+
+  private _prepareForBackNavigation() {
+    this._listRef.nativeElement.opacity = 0;
+    this._selectedView.opacity = 0;
+
+    this._imageRef.nativeElement.src = this.landmarksService.getSelected().image;
+    this._imageContainerRef.nativeElement.translateY = this._adjustedOffset;
+    this._imageContainerRef.nativeElement.opacity = 1;
+
+    this._buttonRef.makeArrow();
+    this._searchRef.nativeElement.opacity = 0;
+}
+
+    public onNavigationItemTap(args: any) {
+      this.landmarksService.setSelectedId(args.index);
+      this._selectedView = args.view;
+      this.animationsService.animationOffset = this.measureOffset(args.view, args.object);
+      this.nav.navigate(['/details'], { animated: false });
+      setTimeout(() => {
+          this._prepareForBackNavigation();
+      });
+  }
+
+  private _onNavigatedTo() {
+    let offset = this.animationsService.animationOffset + this._adjustedOffset;
+    this._imageContainerRef.nativeElement.animate({
+        translate: { x: 0, y: offset },
+        duration: 200,
+        curve: AnimationCurve.easeOut
+    }).then(() => {
+        this._selectedView.opacity = 1;
+        this._imageContainerRef.nativeElement.animate({
+            opacity: 0,
+            duration: 400,
+            curve: AnimationCurve.easeOut
+        }).then(() => {
+            this._imageContainerRef.nativeElement.translateY = 0;
+            })
+        }).catch(() => { });
+
+    this._listRef.nativeElement.animate({
+        opacity: 1,
+        duration: 200
+    }).catch(() => { });
+    this._searchRef.nativeElement.animate({
+        opacity: 1,
+        duration: 200
+    }).catch(() => { });
+}
+
 }

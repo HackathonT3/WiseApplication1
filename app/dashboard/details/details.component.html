@@ -1,0 +1,10 @@
+<ActionBar class="action-bar" backgroundColor="#2B3238">
+	<NavigationButton visibility="collapsed"></NavigationButton>
+	<GridLayout columns="auto,*,auto" ios:padding="0 10" height="100%" width="100%">
+		<ActionButton (tap)="onTap($event)" isArrow="true"></ActionButton>
+		<Label col="1" text="Class Detail" class="action-bar-label"></Label>	</GridLayout>
+</ActionBar>
+
+<GridLayout>
+		<Label [text]="landmark" textAlignment="center"></Label>
+</GridLayout>

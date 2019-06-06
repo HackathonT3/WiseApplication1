@@ -14,6 +14,7 @@ const routes: Routes = [
     { path: "quiz", loadChildren: "./quiz/quiz.module#QuizModule" },
     { path: "selector", loadChildren: "./quiz/selector/selector.module#SelectorModule" },
     { path: "score", loadChildren: "./quiz/score/score.module#ScoreModule" },
+    { path: "details", loadChildren: "./dashboard/details/details.module#DetailsModule" }
 ];
 
 @NgModule({

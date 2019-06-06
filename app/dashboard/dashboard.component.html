@@ -123,8 +123,6 @@
        </GridLayout>
 
         <StackLayout row="1">
-
-            <ScrollView class="page">
                      <ListView class="list-group" [items]="courses" (itemTap)="onCourseTap($event)">
                             <ng-template let-item="item">
                                    <GridLayout class="list-group-item" rows="*" columns="auto, *">
@@ -132,8 +130,6 @@
                                    </GridLayout>
                             </ng-template>
                      </ListView>
-              </ScrollView>
-
         </StackLayout>
     </GridLayout>
 
@@ -209,18 +205,19 @@
             <Label text="CLASSES" fontSize="20" padding="5" color="black"
                    textAlignment="center" style="border-bottom-width: 1; border-bottom-color: black;"></Label>
         </GridLayout>
-        <StackLayout row="1">
-              <ScrollView class="page">
-                       <ListView class="list-group" [items]="classes" (itemTap)="onClassTap($event)">
-                              <ng-template let-item="item">
-                                     <GridLayout class="list-group-item" rows="*" columns="auto, *">
-                                            <Label [text]="item"></Label>
-                                     </GridLayout>
-                              </ng-template>
-                       </ListView>
-                </ScrollView>
-  
-          </StackLayout>
+        <GridLayout row="1" height="100%">
+              <ListView #list [items]="landmarks" (itemTap)="onNavigationItemTap($event)">
+                     <ng-template let-item="item">
+                            <GridLayout class="list-item">
+                                   <Image [src]="item.image"></Image>
+                                   <Label [text]="item.name" class="item-title"></Label>
+                            </GridLayout>
+                     </ng-template>
+              </ListView>
+              <AbsoluteLayout #animatingImageContainer opacity="0" class="animating-image-container">
+                     <Image #animatingImage width="100%"></Image>
+              </AbsoluteLayout>
+       </GridLayout>
     </GridLayout>
 
     <GridLayout row="1" *ngIf="selectedRoute == 'loading' ? true : false"
