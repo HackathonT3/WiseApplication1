@@ -9,40 +9,41 @@
                 },
                 {
                     "isOwn": false,
-                    "imageSrc": "~/assets/face1.jpg",
-                    "title": "william"
-                },
-                {
-                    "isOwn": false,
-                    "imageSrc": "~/assets/face3.jpg",
-                    "title": "pavlo"
-                },
-                {
-                    "isOwn": false,
-                    "imageSrc": "~/assets/face4.jpg",
-                    "title": "kumaran"
-                },
-                {
-                    "isOwn": false,
-                    "imageSrc": "~/assets/face3.jpg",
-                    "title": "john"
-                },
-                {
-                    "isOwn": false,
                     "imageSrc": "~/assets/face2.jpg",
-                    "title": "dena007"
+                    "title": "Course"
+                },
+                {
+                    "isOwn": false,
+                    "imageSrc": "~/assets/assignments.jpg",
+                    "title": "Assignments",
+                    "route": "classes"
+                },
+                {
+                    "isOwn": false,
+                    "imageSrc": "~/assets/exam.jpg",
+                    "title": "Take Exam"
+                },
+                {
+                    "isOwn": false,
+                    "imageSrc": "~/assets/certification.jpg",
+                    "title": "Certification"
+                },
+                {
+                    "isOwn": false,
+                    "imageSrc": "~/assets/face3.jpg",
+                    "title": "Find Teacher"
                 }
             ],
             "body": [
                 {
                     "imageSrc": "~/assets/face3.jpg",
-                    "name": "Pavlo",
+                    "name": "Jack",
                     "location": "Lisbon Portugal",
-                    "post": "~/assets/wk.png",
+                    "post": "~/assets/blockChain.png",
                     "likes": "400",
                     "desc": {
-                        "person": "Pavlo ",
-                        "content": "#woorkout.pt#startup"
+                        "person": "Jack ",
+                        "content": "Blockchain Basics and Hands-on Guidance#BlockChain.pt#BitCoin"
                     },
                     "time": "2 hours ago"
                 },
@@ -50,47 +51,47 @@
                     "imageSrc": "~/assets/face4.jpg",
                     "name": "Kumaran",
                     "location": "Bangalore India",
-                    "post": "https://cdn.pixabay.com/photo/2018/05/03/22/34/lion-3372720__480.jpg",
+                    "post": "~/assets/usChinaTrade.png",
                     "likes": "300",
                     "desc": {
                         "person": "Kumaran ",
-                        "content": "#throwback"
+                        "content": "US China Trade Clash Explained#ThradeWar"
                     },
                     "time": "3 hours ago"
+                },
+                {
+                    "imageSrc": "~/assets/wise.png",
+                    "name": "#Wise",
+                    "location": "Bedford MA",
+                    "post": "~/assets/economics.png",
+                    "likes": "1000",
+                    "desc": {
+                        "person": "W!ise ",
+                        "content": "Checkout new courses for 'Principles of Microeconomics' #Microecomonics"
+                    },
+                    "time": "6 hours ago"
                 },
                 {
                     "imageSrc": "~/assets/face1.jpg",
                     "name": "William",
                     "location": "Indiana US",
-                    "post": "https://cdn.pixabay.com/photo/2018/12/29/23/49/rays-3902368__480.jpg",
+                    "post": "~/assets/sat.png",
                     "likes": "500",
                     "desc": {
                         "person": "William ",
-                        "content": "#throwback"
+                        "content": "Checkout Awesome SAT guide#SATPrep"
                     },
                     "time": "4 hours ago"
-                },
-                {
-                    "imageSrc": "https://play.nativescript.org/dist/assets/img/NativeScript_logo.png",
-                    "name": "#NativeScript",
-                    "location": "Bedford MA",
-                    "post": "https://play.nativescript.org/dist/assets/img/NativeScript_logo.png",
-                    "likes": "1000",
-                    "desc": {
-                        "person": "NativeScript ",
-                        "content": "#throwback"
-                    },
-                    "time": "6 hours ago"
                 },
                 {
                     "imageSrc": "~/assets/face2.jpg",
                     "name": "John",
                     "location": "San Francisco",
-                    "post": "~/assets/face2.jpg",
+                    "post": "~/assets/internship.jpg",
                     "likes": "100",
                     "desc": {
                         "person": "John ",
-                        "content": "#throwback"
+                        "content": "Summer Internships for High School Students"
                     },
                     "time": "7 hours ago"
                 },
@@ -98,11 +99,11 @@
                     "imageSrc": "~/assets/face3.jpg",
                     "name": "dena007",
                     "location": "CA",
-                    "post": "https://cdn.pixabay.com/photo/2018/10/31/22/42/surprised-3786845__480.jpg",
+                    "post": "~/assets/scholarships.png",
                     "likes": "150",
                     "desc": {
                         "person": "dena007 ",
-                        "content": "#throwback"
+                        "content": "Scholarships & Grants for College Students"
                     },
                     "time": "9 hours ago"
                 }
