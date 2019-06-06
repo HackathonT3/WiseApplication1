@@ -7,8 +7,12 @@ import { Page } from 'tns-core-modules/ui/page/page';
 import { LoginService } from './login.service';
 import { SchoolSearchComponent } from './school-search/school-search.component';
 import * as appSettings from "tns-core-modules/application-settings";
+<<<<<<< HEAD
 import { ForgotPasswordPrompt } from './forgot-password/forgot-password.prompt';
 import { User } from '../register/shared/user.model';
+=======
+import { ForgotPasswordPrompt } from "./forgot-password/forgot-password.prompt"
+>>>>>>> 3636576f9193786f6dc36f27bee9625a99864c12
 
 @Component({
     selector: 'ns-login',
@@ -18,9 +22,14 @@ import { User } from '../register/shared/user.model';
 })
 export class LoginComponent {
 
-    user: User;
+    user: any;
     processing = false;
+<<<<<<< HEAD
     forgotPasswordPrompt = new ForgotPasswordPrompt();
+=======
+    forgotPasswordPrompt = new ForgotPasswordPrompt;
+    
+>>>>>>> 3636576f9193786f6dc36f27bee9625a99864c12
     @ViewChild("password") password: ElementRef;
 
     constructor(page: Page, private nav: RouterExtensions, private loginService: LoginService,
@@ -28,16 +37,21 @@ export class LoginComponent {
         private _modalService: ModalDialogService) {
 
         page.actionBarHidden = true;
-        this.user = new User();
-        this.user.userName = appSettings.getString("user");
+        this.user = {};
+        this.user.email = "user@nativescript.org";
+        this.user.password = "password";
     }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 3636576f9193786f6dc36f27bee9625a99864c12
     register() {
         this.nav.navigate(["/student-register"]);
     }
 
     submit() {
-        if (!this.user.userName || !this.user.password) {
-            this.alert("Please provide both a username and password.");
+        if (!this.user.email || !this.user.password) {
+            this.alert("Please provide both an email address and password.");
             return;
         }
 
@@ -46,18 +60,17 @@ export class LoginComponent {
     }
 
     login() {
-        this.loginService.login(this.user).subscribe(res => {
+        this.loginService.login().subscribe(res => {
             this.processing = false;
-            appSettings.setString("user", this.user.userName);
+            appSettings.setString("user", this.user.email);
+
             this.nav.navigate(["/dashboard"]);
-        }, err => {
-            this.alert("Username or password is incorrect");
-            this.processing = false;
         });
     }
 
     forgotPassword() {
-        this.forgotPasswordPrompt.forgotPassword();
+        this.nav.navigate(["/selector"]);
+        // this.forgotPasswordPrompt.forgotPassword();
     }
 
     focusPassword() {
@@ -67,7 +80,7 @@ export class LoginComponent {
 
     alert(message: string) {
         return alert({
-            title: "W!SE Login",
+            title: "APP NAME",
             okButtonText: "OK",
             message: message
         });
@@ -82,7 +95,7 @@ export class LoginComponent {
 
         this._modalService.showModal(SchoolSearchComponent, options)
             .then((result: any) => {
-                // this.user.school = result.school.name;
+                this.user.school = result.school.name;
             });
     }
 }

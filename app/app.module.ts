@@ -5,6 +5,7 @@ import { AppComponent } from "./app.component";
 import { HttpClientModule } from "@angular/common/http";
 
 import { UserService } from "./register/shared/user.service";
+import { FileReaderService } from "./core/fileReader.service";
 
 @NgModule({
     bootstrap: [
@@ -22,7 +23,8 @@ import { UserService } from "./register/shared/user.service";
         NO_ERRORS_SCHEMA
     ],
     providers: [
-        UserService
+        UserService,
+        FileReaderService
     ]
 })
 export class AppModule { }
