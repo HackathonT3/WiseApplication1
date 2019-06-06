@@ -19,19 +19,19 @@ export class ClassesComponent implements OnInit {
     listViewData = [
         {
             title: "Financial Literacy",
-            artist: "Basic introductory course",
+            artist: "Basic introductory questions",
             year: "2019",
             imageUrl: "~/images/calculator-desk-finance-1253591.jpg"
         },
         {
             title: "Financial Literacy II",
-            artist: "Intermediate course",
+            artist: "Intermediate practice",
             year: "2014",
             imageUrl: "~/images/calculator-desk-finance-1253591.jpg"
         },
         {
             title: "Financial Literacy III",
-            artist: "Advanced Financial Literacy",
+            artist: "Advanced practice",
             year: "2017",
             imageUrl: "~/images/calculator-desk-finance-1253591.jpg"
         }
