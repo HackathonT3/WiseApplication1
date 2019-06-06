@@ -7,6 +7,8 @@ import { Page } from 'tns-core-modules/ui/page/page';
 import { LoginService } from './login.service';
 import { SchoolSearchComponent } from './school-search/school-search.component';
 import * as appSettings from "tns-core-modules/application-settings";
+import { ForgotPasswordPrompt } from "./forgot-password/forgot-password.prompt"
+
 @Component({
     selector: 'ns-login',
     templateUrl: './login.component.html',
@@ -17,7 +19,7 @@ export class LoginComponent {
 
     user: any;
     processing = false;
-    forgotPasswordPrompt = new ForgotPasswordPrompt
+    forgotPasswordPrompt = new ForgotPasswordPrompt;
     
     @ViewChild("password") password: ElementRef;
 
@@ -30,7 +32,7 @@ export class LoginComponent {
         this.user.email = "user@nativescript.org";
         this.user.password = "password";
     }
-6
+
     register() {
         this.nav.navigate(["/student-register"]);
     }
@@ -55,7 +57,8 @@ export class LoginComponent {
     }
 
     forgotPassword() {
-        this.forgotPasswordPrompt.forgotPassword();
+        this.nav.navigate(["/selector"]);
+        // this.forgotPasswordPrompt.forgotPassword();
     }
 
     focusPassword() {
