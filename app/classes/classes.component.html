@@ -23,7 +23,7 @@
             <ListView class="list-group" [items]="listViewData.slice(0,1)" (itemTap)="onItemTap($event)" height="500"
                 backgroundColor="#f8f8f8">
                 <ng-template let-song="item">
-                    <GridLayout orientation="horizontal" class="list-group-item" rows="auto" columns="auto,*,auto">
+                    <GridLayout orientation="horizontal" class="list-group-item" (tap)="onItemTap(song)" rows="auto" columns="auto,*,auto">
                         <Image col="0" row="0" [src]="song.imageUrl" height="75" width="75" ></Image>
                         <StackLayout col="1" row="0" marginLeft="15">
                             <Label marginTop="5" paddingRight="5" [text]="song.title"

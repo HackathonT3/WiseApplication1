@@ -57,7 +57,7 @@ export class ClassesComponent implements OnInit {
     }
 
     onItemTap(args: ItemEventData): void {
-
+        this.routerExtensions.navigate(["/selector"]);
     }
 
     onButtonTap(): void {
