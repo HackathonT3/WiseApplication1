@@ -25,10 +25,10 @@ export class UserService {
         body.append('userName', user.userName);
         body.append('username', user.userName);
         console.log(body);
-        this.serverUrl = this.serverUrl + '/members/create';
+        this.serverUrl = this.serverUrl + '/members/create?';
         let options = this.createRequestOptions();
-        return this.http.post(this.serverUrl, 
-            body.toString(), 
+        return this.http.post(this.serverUrl + body.toString(), 
+            null, 
             { headers: options });
     }
 

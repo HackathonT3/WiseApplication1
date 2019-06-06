@@ -89,7 +89,7 @@ export class WelcomeComponent implements OnInit {
 
     skipIntro() {
         // this.nav.navigate(["/home"], { clearHistory: true });
-        this.nav.navigate(["/login"]);
+        this.nav.navigate(["/dashboard"]);
     }
 
     onSwipe(args: SwipeGestureEventData) {

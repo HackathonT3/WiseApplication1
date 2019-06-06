@@ -56,7 +56,7 @@ export class StudentRegisterComponent {
     this.userService.register(this.user)
         .subscribe((result) => {
             this.processing = false;
-            this.alert("Your account was successfully created.");
+            this.alertSuccess("Your account was successfully created.");
         });
   }
 
@@ -66,6 +66,17 @@ export class StudentRegisterComponent {
         okButtonText: "OK",
         message: message
     });
+  }
+
+  alertSuccess(message: string) {
+    return alert({
+        title: "W!se Register",
+        okButtonText: "OK",
+        message: message
+    }).then(function () {
+      this.nav.navigate(["/dashboard"]);
+    });
+
   }
 
   focusPassword() {
