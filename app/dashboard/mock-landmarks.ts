@@ -3,7 +3,7 @@ import { Landmark } from './landmark';
 export const LANDMARKS: Landmark[] = [
     {
         id: 0,
-        name: "Class 1",
+        name: "The Core Four of Personal Finance",
         description: "Marvel at more than 2,000 natural rock arches at this park just outside of Moab. " +
             "Some of the formations can be spotted from the road, but the best require a scenic hike. " +
             "Don’t miss the famous Delicate Arch (3 miles round-trip) or the 7-mile (round-trip) Devils Garden Loop." +
@@ -13,14 +13,14 @@ export const LANDMARKS: Landmark[] = [
             "\n\n" +
             "Whether you are camping or staying in a hotel, don’t forget to spend some time looking up at the sky " +
             "after night falls. You’ll find some of the darkest skies in and around Utah’s national parks.",
-        image: "~/images/arches-delicate-arch-sky_adobe_680.jpg",
+        image: "~/images/pf1.jpg",
         location: "Utah",
         likes: 245,
         comments: 23
     },
     {
         id: 1,
-        name: "Class 2",
+        name: "Personal Finance 101",
         description: "Nicknamed the \"Crown of the Continent,\" Glacier National Park sits in the northwest corner of " +
             "Montana. Glacier National Park is just a scenic day’s drive north from Yellowstone." +
             "\n\n" +
@@ -39,14 +39,14 @@ export const LANDMARKS: Landmark[] = [
             "meadows and lakes. Its diverse habitats are home to over 70 species of mammals and over 260 species of birds. " +
             "The spectacular glaciated landscape is a hiker’s paradise, containing 700 miles of maintained trails that lead " +
             "deep into one of the largest intact ecosystems in the lower 48 states.",
-        image: "~/images/glacier-avalache-lake-kids_adobe_680.jpg",
+        image: "~/images/pf2.png",
         location: "Montana",
         likes: 152,
         comments: 16
     },
     {
         id: 2,
-        name: "Class 3",
+        name: "Personal and Family Financial Planning",
         description:
             "Just 15 miles south of Moab, hike your way through 337, 598 acres of dramatic red-rock " +
             "landscape in Canyonlands NP, and do it all without having to compete for room on the trail - Canyonlands " +
@@ -65,14 +65,14 @@ export const LANDMARKS: Landmark[] = [
             "in the canyons and buttes, along with mule deer, kangaroo rats, and coyote. Look up for red- tailed hawks, and at night, " +
             "for one of the darkest skies in the Lower 48. On a moonless night, get more than your fill of stars - or get out the " +
             "binoculars to try for the rings of Saturn.",
-        image: "~/images/canyonlands-mesa-arch-sunrise_dollar_680.jpg",
+        image: "~/images/pf3.jpg",
         location: "Utah",
         likes: 385,
         comments: 31
     },
     {
         id: 3,
-        name: "Class 4",
+        name: "Personal Finance Planning",
         description: "Divided by a 277-mile long canyon, and the mile-deep Colorado River, the two halves of Grand Canyon National Park, " +
             "the North and South Rim, offer two parks in one, with diverse landscape and ecology on either." +
             "\n\n" +
@@ -86,14 +86,14 @@ export const LANDMARKS: Landmark[] = [
             "One of the most exciting ways to experience the Grand Canyon is to float through it by way of raft on the Colorado River. " +
             "Most people book their trip with a commercial outfitter and you can even combine the rafting trip with a helicopter ride. " +
             "Experienced whitewater rafter? Enter the lottery to do your own trip.",
-        image: "~/images/gc-yavapai-point-sunset_dp_680.jpg",
+        image: "~/images/pf4.jpeg",
         location: "Arizona",
         likes: 514,
         comments: 49
     },
     {
         id: 4,
-        name: "Class 5",
+        name: "Financial Literacy",
         description: "Maximize your experience at Bryce Canyon National Park by driving to Sunrise, Sunset, Inspiration and " +
             "Bryce viewpoints. These are all spectacular overlooks of the park’s red hoodoos shooting up against evergreen " +
             "forests in the background. Depending on the time of day, and the angle and light of the sun, the hoodoos and " +
@@ -103,14 +103,14 @@ export const LANDMARKS: Landmark[] = [
             "for everyone at Bryce Canyon. Our favorite easy hikes include Bristlecone Loop Trail and Queens Garden Trail. " +
             "Hat Shop is our favorite moderate hike. For more physically fit hikers looking for a strenuous adventure, " +
             "do the 5.5-mile vertically challenging Peek-A-Boo Loop or the 7.9 Fairyland Loop rated “difficult” by the park service. ",
-        image: "~/images/bryce-amphitheater-inspiration-point_dp_680.jpg",
+        image: "~/images/pf5.jpeg",
         location: "Utah",
         likes: 245,
         comments: 11
     },
     {
         id: 5,
-        name: "Class 6",
+        name: "Introduction to Simple and Compound Interest",
         description: "Grand Teton National Park preserves a spectacular landscape rich with majestic mountains, pristine lakes, " +
             "and extraordinary wildlife. The abrupt vertical rise of the jagged Teton Mountains contrasts with the horizontal " +
             "sage-covered valley and glacial lakes at its base." +
@@ -125,14 +125,14 @@ export const LANDMARKS: Landmark[] = [
             "one of the nation's most awe-inspiring landscapes. In addition to gazing at the incredible views, there is much to do " +
             "in this park from hiking and rock climbing to boating and fishing. And when you need a break from outdoor adventure, " +
             "there are few better places to simply relax and watch the park's incredible wildlife.",
-        image: "~/images/gteton-schwabachers-landing_dollar_680.jpg",
+        image: "~/images/pf6.png",
         location: "Wyoming",
         likes: 169,
         comments: 7
     },
     {
         id: 6,
-        name: "Class 7",
+        name: "Introduction to Managing Your Personal Finance Debts",
         description: "Explore South Dakota’s Black Hills region, a natural wonder in its own right. " +
             "Located about six hours from Yellowstone, the Black Hills are home to seven national " +
             "sites — Badlands National Park, Jewel Cave National Monument, the Lewis & Clark National " +
@@ -151,7 +151,7 @@ export const LANDMARKS: Landmark[] = [
             "At the Ben Reifel Visitor Center, kids can use a touchscreen to assemble a virtual skeleton and " +
             "touch fossilized animal replicas. You also can watch the film Land of Stone and Light in " +
             "the center’s 95-seat air-conditioned theater.",
-        image: "~/images/badlands_wikipd_680x392.jpg",
+        image: "~/images/pf7.jpeg",
         location: "South Dakota",
         likes: 227,
         comments: 26

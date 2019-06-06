@@ -34,7 +34,7 @@ export class DashboardComponent implements OnInit {
 
   photos: string[] = [];
 
-  instagram: any;
+  instagram: any[] = [];
 
   courses: any[] = [];
 
